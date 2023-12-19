@@ -1,0 +1,15 @@
+# 🔥 News
+- *2023.12*: 🔥 My [google scholar](https://scholar.google.com/citations?user=m3MlVBUAAAAJ) citations have exceeded 190!
+- *2023.12*: 🎉 Our journal on [ATR](https://doi.org/10.1109/taes.2023.3337768) is accepted by IEEE Transactions on Aerospace and Electronic Systems [code]()
+- *2023.10*: 🎉 Our paper on [Face Recognition](https://arxiv.org/abs/2312.09367) is accepted by **WACV 2024** [code]() [video](https://www.youtube.com/watch?v=Hb8SlpFCuGI)
+- *2023.06*: 🎉 One paper [Caption-guided face recognition](https://arxiv.org/abs/2308.06866) is accepted by **IJCB** 2023
+- *2023.04*: Attended [EAB and CITeR Biometrics Workshop](https://eab.org/events/program/312?ts=1674459113551) in Martigny, Switzerland, organized by European Association for Biometrics ([EAB](https://eab.org/)) in collaboration with the Center for Identification Technology Research ([CITeR](https://citer.clarkson.edu/)) and [IDIAP](https://www.idiap.ch/en) research institute to present two progress report and one final project report.
+- *2023.01*: 🎉 Our journal on [Multi-finger fingerprint](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/bme2.12117) has been publied in **IET Biometrics** journal.
+- *2022.11* I received the best poster award in [CITer](https://citer.clarkson.edu/) Fall Program Review
+- *2022.011* 🔥 Awarded a research grant from [CITer](https://citer.clarkson.edu/) for our new project (Project #22F-01W), *A Perpetual Deep Face Recognition System*, which aims to build a dynamic deep learning model that continually learns new FR tasks.
+- *2022.08*: 🎉 One paper [Multi-finger fusion](https://doi.org/10.1109/BIOSIG55365.2022.9897056) is accepted in **BIOSIG** 2022
+- *2022.04* 🔥 Awarded a research grant from [CITer](https://citer.clarkson.edu/) for our new project (Project #22S-06W), *One-to-One Face Recognition with Human Examiner in the Loop*, which aims to improve the performance of a FR system with human examiner in the loop.
+- *2022.01*: 🔥 My [code](https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73) on installing CUDA in Ubuntu has exceeded 500 stars!(⭐️0.5k+)
+- *2021.06*: I joined the Deep Learning Lab at WVU to work under [Prof. Nasser Nasrabadi](https://nassernasrabadi.faculty.wvu.edu/) as a PhD researcher!
+- *2021.04*: 🎉 Our journal on [Gait Recognition](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/cvi2.12050) has been publied in **IET Computer Vision** journal.
+- *2020.09*: I defended my M.Sc. thesis at [IICT, BUET](https://iict.buet.ac.bd/). Thanks to [Dr. Hossen Asiful Mustafa](https://iict.buet.ac.bd/?page_id=54) for your invaluable supervision.

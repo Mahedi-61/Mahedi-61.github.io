@@ -19,5 +19,9 @@ shieldio_data = {
   "label": "citations",
   "message": f"{author['citedby']}",
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
 with open(f'results/gs_data_shieldsio.json', 'w') as outfile:
     json.dump(shieldio_data, outfile, ensure_ascii=False)

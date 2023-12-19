@@ -8,6 +8,18 @@ redirect_from:
   - /about.html
 ---
 
+<<<<<<< HEAD
+<span class='anchor' id='about-me'></span>
+{% include_relative includes/intro.md %}
+
+{% include_relative includes/news.md %}
+
+{% include_relative includes/pub.md %}
+
+{% include_relative includes/honers.md %}
+
+{% include_relative includes/others.md %}
+=======
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
@@ -56,3 +68,4 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 💻 Internships
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+>>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
