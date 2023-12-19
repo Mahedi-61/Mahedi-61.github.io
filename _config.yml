@@ -6,11 +6,13 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-<<<<<<< HEAD
 title                    : "Md Mahedi Hasan"
 description              : "PhD Researcher at West Virginia University."
 repository               : "Mahedi-61/Mahedi-61.github.io"
 google_scholar_stats_use_cdn : true
+
+# google analytics
+google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 
 
 # Site Author
@@ -24,32 +26,6 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=m3MlVBUAAAAJ"
   email            : "mahedi0803@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Md-Mahedi-Hasan-9"
-=======
-title                    : "Lorem ipsum"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
-repository               : "RayeRen/acad-homepage.github.io"
-google_scholar_stats_use_cdn : true
-
-# google analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
-
-# SEO Related
-google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
-bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
-
-# Site Author
-author:
-  name             : "Lorem ipsum"
-  avatar           : "images/android-chrome-512x512.png"
-  bio              : "Lorem ipsum College"
-  location         : "Beijing, China"
-  employer         :
-  pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "Lorem@ipsum.com"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
   uri              :
   bitbucket        :
   codepen          :
@@ -57,7 +33,6 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-<<<<<<< HEAD
   github           : "Mahedi-61"
   google_plus      :
   keybase          :
@@ -70,31 +45,13 @@ author:
   pinterest        :
   soundcloud       :
   stackoverflow    : 
-=======
-  github           : # e.g., "github username"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
   steam            :
   tumblr           :
   twitter          : 
   vine             :
   weibo            :
   xing             :
-<<<<<<< HEAD
   youtube          : "@hasan.mahedi"
-=======
-  youtube          :
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
   wikipedia        :
 
 
@@ -104,21 +61,15 @@ include:
   - _pages
   - files
 exclude:
-<<<<<<< HEAD
-=======
   - docs
   - google_scholar_crawler
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-<<<<<<< HEAD
-=======
   - .github
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
   - CHANGELOG
   - Capfile
   - Gemfile
@@ -136,11 +87,6 @@ exclude:
   - package.json
   - tmp
   - vendor
-<<<<<<< HEAD
-  - google_scholar_crawler
-  - github_myprofile_updater
-=======
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
 keep_files:
   - .git
   - .svn
@@ -186,11 +132,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-<<<<<<< HEAD
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-=======
 timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
 
 
 # Plugins
