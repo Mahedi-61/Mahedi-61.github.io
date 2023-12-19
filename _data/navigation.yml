@@ -8,7 +8,6 @@ main:
 
   - title: "Publications"
     url: "/#-publications"
-<<<<<<< HEAD
     
   - title: "Research Grants"
     url: "/#-research-grants"
@@ -18,16 +17,14 @@ main:
 
   - title: "Awards"
     url: "/#-awards"
-=======
 
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
+
 
   - title: "Educations"
     url: "/#-educations"
 
-<<<<<<< HEAD
   - title: "Academic Activities"
     url: "/#-academic-activities"
     
@@ -39,10 +36,10 @@ main:
 
   - title: "Invited Talks"
     url: "/#-invited-talks"
-=======
+
   - title: "Invited Talks"
     url: "/#-invited-talks"
 
   - title: "Internships"
     url: "/#-internships"
->>>>>>> 2cc1577eeaf2f74dede6d016a70722dbd409ea2f
+
