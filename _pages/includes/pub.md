@@ -5,7 +5,7 @@
 <div class='paper-box-text' markdown="1">
 
 [Contrastive Learning and Cycle Consistency-Based Transductive Transfer Learning for Target Annotation](https://doi.org/10.1109/TAES.2023.3337768) \\
-Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao [code]()
+Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao
 - We propose a hybrid contrastive learning base unpaired domain translation (H-CUT) network that achieves a significantly lower FID score. It incorporates both attention and entropy to emphasize the domain-specific region, a noisy feature mixup module to generate high variational synthetic negative patches, and a modulated noise contrastive estimation (MoNCE) loss to reweight all negative patches using optimal transport for better performance. 
 - Our proposed contrastive learning and cycle-consistency-based TTL (C3TTL) framework consists of two H-CUT networks and two classifiers.
 </div>
