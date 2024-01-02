@@ -59,5 +59,6 @@
 
 
 # 💬 Invited Talks
+- *2023.12*, The Engine Behind ChatGPT. Cognitive Mind Webinar, Dhaka, Bangladesh. [\[video\]](https://www.youtube.com/watch?v=4kKIq80CJzc)
 - *2019.11*, Deep Learning in Computer Vision. [Google Developer Group, Sonargaon](https://gdg.community.dev/gdg-sonargaon/), Dhaka, Bangladesh. [\[video\]](https://www.youtube.com/watch?v=d6m7WHGOeho)
 - *2020.03*, Gait Recognition. [CSE Fest 2020](http://www.cse.manarat.ac.bd/csefest20/), MIU, Dhaka, Bangladesh (March 2020)
