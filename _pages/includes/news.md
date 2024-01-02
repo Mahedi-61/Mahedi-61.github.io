@@ -1,6 +1,6 @@
 # 🔥 News
-- *2023.12*: 🔥 My [google scholar](https://scholar.google.com/citations?user=m3MlVBUAAAAJ) citations have exceeded 190!
-- *2023.12*: 🎉 Our journal on [ATR](https://doi.org/10.1109/taes.2023.3337768) is accepted by IEEE Transactions on Aerospace and Electronic Systems [code]()
+- *2024.01*: 🔥 My [google scholar](https://scholar.google.com/citations?user=m3MlVBUAAAAJ) citations have exceeded 200!
+- *2023.12*: 🎉 Our journal on [ATR](https://doi.org/10.1109/taes.2023.3337768) is accepted by IEEE Transactions on Aerospace and Electronic Systems.
 - *2023.10*: 🎉 Our paper on [Face Recognition](https://arxiv.org/abs/2312.09367) is accepted by **WACV 2024** [code]() [video](https://www.youtube.com/watch?v=Hb8SlpFCuGI)
 - *2023.06*: 🎉 One paper [Caption-guided face recognition](https://arxiv.org/abs/2308.06866) is accepted by **IJCB** 2023
 - *2023.04*: Attended [EAB and CITeR Biometrics Workshop](https://eab.org/events/program/312?ts=1674459113551) in Martigny, Switzerland, organized by European Association for Biometrics ([EAB](https://eab.org/)) in collaboration with the Center for Identification Technology Research ([CITeR](https://citer.clarkson.edu/)) and [IDIAP](https://www.idiap.ch/en) research institute to present two progress report and one final project report.
