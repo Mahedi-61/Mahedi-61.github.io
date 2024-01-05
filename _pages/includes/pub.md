@@ -16,7 +16,7 @@ Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao
 <div class='paper-box-text' markdown="1">
 
 [Text-Guided Face Recognition using Multi-Granularity Cross-Modal Contrastive Learning](https://arxiv.org/abs/2312.09367) \\
-**Md Mahedi Hasan**, Shoaib Meraj Sami, and Nasser Nasrabadi. \[code\](https://github.com/Mahedi-61/Text_Guided_Face_Recognition) \[video\](https://www.youtube.com/watch?v=Hb8SlpFCuGI)
+**Md Mahedi Hasan**, Shoaib Meraj Sami, and Nasser Nasrabadi. [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition) [\[video\]](https://www.youtube.com/watch?v=Hb8SlpFCuGI)
 
 - We introduce text-guided face recognition (TGFR) to analyze the impact of integrating facial attributes in the form of natural language descriptions while we hypothesize that adding semantic information into the loop can significantly improve the image understanding capability of an FR algorithm compared to other soft biometrics. 
 - We also design a face-caption alignment module (FCAM), which incorporates cross-modal contrastive losses across multiple granularities to maximize the mutual information between local and global features of the face-caption pair. 
@@ -27,7 +27,7 @@ Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao
 <div class='paper-box-text' markdown="1">
 
 [Improving Face Recognition from Caption Supervision with Multi-Granular Contextual Feature Aggregation](https://arxiv.org/abs/2308.06866) \\
-**Md Mahedi Hasan**, and Nasser Nasrabadi. \[code\](https://github.com/Mahedi-61/Text_Guided_Face_Recognition)
+**Md Mahedi Hasan**, and Nasser Nasrabadi. [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition)
 -  We introduce caption-guided face recognition (CGFR) as a new framework to improve the performance of commercial-off-the-shelf (COTS) face recognition (FR) systems. 
 - We propose a contextual feature aggregation module (CFAM) that addresses this issue by effectively exploiting the fine-grained word-region interaction and global image-caption association. Specifically, CFAM adopts a self-attention and a cross-attention scheme for improving the intra-modality and inter-modality relationship between the image and textual features, respectively. 
 - We also design a textual feature refinement module (TFRM) that refines the textual features of the pre-trained BERT encoder by updating the contextual embeddings. 
@@ -68,8 +68,8 @@ Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao
 - `ETCCE 2021` [A deep Spatio-temporal network for vision-based sexual harassment detection](https://doi.org/10.1109/ETCCE54784.2021.9689891), Md Shamimul Islam, **Md Mahedi Hasan**, Sohaib Abdullah, et al.
 - ``Book Chapter 2020`` [Deep Learning based Early Detection and Grading of Diabetic Retinopathy Using Retinal Fundus Images](http://dx.doi.org/10.1201/9781003031352-6), Sheikh Muhammad Saiful Islam, **Md Mahedi Hasan**, Sohaib Abdullah <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:R3hNpaxXUhUC'></span></strong> [arXiv](https://arxiv.org/abs/1812.10595)
 - `RAAICON 2019` [Robust Pose-Based Human Fall Detection using Recurrent Neural Network](https://doi.org/10.1109/RAAICON48939.2019.23), **Md Mahedi Hasan**, Md Shamimul Islam, Sohaib Abdullah <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:maZDTaKrznsC'></span></strong> 
-- `ICBSLP 2019` [Aibangla: A Benchmark Dataset for Isolated Bangla Handwritten Basic and Compound Character Recognition](https://doi.org/10.1109/ICBSLP47725.2019.201481), **Md Mahedi Hasan**, Mahathir Mohammad Abir, et al. \[dataset\]](https://doi.org/10.17632/hf2tt9kxkn.1)
-- `ICBSLP 2018` [YOLO-Based Three-Stage Network for Bangla License Plate Recognition in Dhaka Metropolitan City](https://doi.org/10.1109/ICBSLP.2018.8554668), Sohaib Abdullah, **Md Mahedi Hasan**, Sheikh Muhammad Saiful Islam <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:HDshCWvjkbEC'></span></strong> \[code\](https://github.com/Mahedi-61/Text_Guided_Face_Recognition), \[dataset\](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset)
+- `ICBSLP 2019` [Aibangla: A Benchmark Dataset for Isolated Bangla Handwritten Basic and Compound Character Recognition](https://doi.org/10.1109/ICBSLP47725.2019.201481), **Md Mahedi Hasan**, Mahathir Mohammad Abir, et al. [\[dataset\]](https://doi.org/10.17632/hf2tt9kxkn.1)
+- `ICBSLP 2018` [YOLO-Based Three-Stage Network for Bangla License Plate Recognition in Dhaka Metropolitan City](https://doi.org/10.1109/ICBSLP.2018.8554668), Sohaib Abdullah, **Md Mahedi Hasan**, Sheikh Muhammad Saiful Islam <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:HDshCWvjkbEC'></span></strong> [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition), [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset)
 - `ICCIT 2018` [DEEPGONET: Multi-label Prediction of GO Annotation for Protein from Sequence Using Cascaded Convolutional and Recurrent Network](https://doi.org/10.1109/ICCITECHN.2018.8631921), Sheikh Muhammad Saiful Islam, **Md Mahedi Hasan** 
 - `IJCSIS 2020` [Forensic Detection of Digital Image Tampering Using Statistical Analysis](https://doi.org/10.5281/zenodo.4130382), Md. Zahurul Haque, **Md Mahedi Hasan** 
 
