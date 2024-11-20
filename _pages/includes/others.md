@@ -1,4 +1,3 @@
-
 # 💬 Reviewing
 - Reviewer at **IEEE/CVF Conference on Computer Vision and Pattern Recognition**
 - Reviewer at **IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)**
@@ -18,7 +17,6 @@
 -   CSE-433: Neural Networks and Fuzzy Systems [\[Fall 2019\]](https://github.com/Mahedi-61/MIU_Fall_2019/tree/master/CSE-433)
 -   Supervising undergraduate student research and projects
 
-
 # 💬 Affiliations
 ### *2015.03 - 2021.05*
 - Assistant Editor of [Byapon Science Magazine](https://www.byapon.com/)
@@ -27,7 +25,6 @@
 
 ### *2023.07 - Present*
 - [IEEE](https://www.ieee.org/) Student Member
-
 
 # 💬 Invited Talks
 - *2023.12*, The Engine Behind ChatGPT. Cognitive Mind Webinar, Dhaka, Bangladesh. [\[video\]](https://www.youtube.com/watch?v=4kKIq80CJzc)

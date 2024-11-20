@@ -7,12 +7,11 @@
  IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM)\\
 **Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition)
 <details>
-<summary>[\[Abstract\]]</summary>
+<summary>Abstract</summary>
 Text-guided face recognition (TGFR) aims to improve the performance of state-of-the-art face recognition (FR) algorithms by incorporating auxiliary information, such as distinct facial marks and attributes, provided as natural language descriptions. Current TGFR algorithms have been proven to be highly effective in addressing performance drops in state-of-the-art FR models, particularly in scenarios involving sensor noise, low resolution, and turbulence effects. Although existing methods explore various algorithms using different cross-modal alignment and fusion techniques, they encounter practical limitations in real-world applications. For example, during inference, textual descriptions associated with face images may be missing, lacking crucial details, or incorrect. Furthermore, the presence of inherent modality heterogeneity poses a significant challenge in achieving effective cross-modal alignment. To address these challenges, we introduce CaptionFace, a TGFR framework that integrates GPTFace, a face image captioning model designed to generate context-rich natural language descriptions from low-resolution facial images. By leveraging GPTFace, we overcome the issue of missing textual descriptions, expanding the applicability of CaptionFace to single-modal FR datasets. Additionally, we introduce a multi-scale feature alignment (MSFA) module to ensure semantic alignment between face-caption pairs at different granularities. Furthermore, we introduce an attribute-aware loss and perform knowledge adaptation to specifically adapt textual knowledge from facial features. Extensive experiments on three face-caption datasets and various unconstrained single-modal benchmark datasets demonstrate that CaptionFace significantly outperforms state-of-the-art FR models and existing TGFR approaches.
 </details>
 </div>
 </div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV 2024</div><img src='images/wacv_2024.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -32,7 +31,7 @@ State-of-the-art face recognition (FR) models often experience a significant per
 <div class='paper-box-text' markdown="1">
 
 [Improving Face Recognition from Caption Supervision with Multi-Granular Contextual Feature Aggregation](https://doi.org/10.1109/IJCB57857.2023.10448749) \\
-2023 IEEE International Joint Conference on Biometrics (IJCB 2023)
+2023 IEEE International Joint Conference on Biometrics (IJCB 2023) \\
 **Md Mahedi Hasan**, and Nasser Nasrabadi.
 <details>
 <summary>Abstract</summary>
@@ -42,7 +41,7 @@ We introduce caption-guided face recognition (CGFR) as a new framework to improv
 </div>
 
 ## 🧑‍🎨 Continual Learning
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV 2025</div><img src='images/wacv_2025.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV 2025</div><img src='images/wacv_2025.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [CLFace: A Scalable and Resource-Efficient Continual Learning Framework for Lifelong Face Recognition]() \\
@@ -54,7 +53,6 @@ An important aspect of deploying face recognition (FR) algorithms in real-world 
 </details>
 </div>
 </div>
-
 
 ## 🎼 Automatic Target Recognition
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TAES 2024</div><img src='images/TAES_2024.png' alt="sym" width="100%"></div></div>
@@ -71,15 +69,13 @@ Annotating automatic target recognition (ATR) is a highly challenging task, prim
 </div>
 
 ## 📚 Fingerprint Recognition 
-- `IET Biometrics 2023` [On Improving Interoperability for Cross-Domain Multi-Finger Fingerprint Matching Using Coupled Adversarial Learning](https://doi.org/10.1049/bme2.12117), **Md Mahedi Hasan**, Nasser Nasrabadi, and Jeremy Dawson \\
+- `IET Biometrics 2023` [On Improving Interoperability for Cross-Domain Multi-Finger Fingerprint Matching Using Coupled Adversarial Learning](https://doi.org/10.1049/bme2.12117), **Md Mahedi Hasan**, Nasser Nasrabadi, and Jeremy Dawson 
 - `BIOSIG 2022` [Deep Coupled GAN-Based Score-Level Fusion for Multi-Finger Contact to Contactless Fingerprint Matching](https://doi.org/10.1109/BIOSIG55365.2022.9897056) <span style="color:red">[Oral Presentation]</span>
-**Md Mahedi Hasan**, Nasser Nasrabadi, and Jeremy Dawson \\
-
+**Md Mahedi Hasan**, Nasser Nasrabadi, and Jeremy Dawson 
 
 ## 🎼 Gait Recognition
 - `IET Computer Vision 2021` [Learning view-invariant features using stacked autoencoder for skeleton-based gait recognition](https://doi.org/10.1049/cvi2.12050), **Md Mahedi Hasan**, and Hossen Asiful Mustafa. 
 - `IJCSIS 2021` [Multi-level feature fusion for robust pose-based gait recognition using RNN](https://www.academia.edu/download/61987403/03_Paper_01012007_IJCSIS_Camera_Ready_pp20-3120200204-65998-gq509w.pdf), **Md Mahedi Hasan**, and Hossen Asiful Mustafa. <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:r0BpntZqJG4C'></span></strong>
-
 
 ## Others
 - `ETCCE 2021` [A deep Spatio-temporal network for vision-based sexual harassment detection](https://doi.org/10.1109/ETCCE54784.2021.9689891), Md Shamimul Islam, **Md Mahedi Hasan**, Sohaib Abdullah, et al.
@@ -89,7 +85,6 @@ Annotating automatic target recognition (ATR) is a highly challenging task, prim
 - `ICBSLP 2018` [YOLO-Based Three-Stage Network for Bangla License Plate Recognition in Dhaka Metropolitan City](https://doi.org/10.1109/ICBSLP.2018.8554668), Sohaib Abdullah, **Md Mahedi Hasan**, Sheikh Muhammad Saiful Islam <span class='show_paper_citations' data='m3MlVBUAAAAJ:HDshCWvjkbEC'></span> [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition), [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset)
 - `ICCIT 2018` [DEEPGONET: Multi-label Prediction of GO Annotation for Protein from Sequence Using Cascaded Convolutional and Recurrent Network](https://doi.org/10.1109/ICCITECHN.2018.8631921), Sheikh Muhammad Saiful Islam, **Md Mahedi Hasan** 
 - `IJCSIS 2020` [Forensic Detection of Digital Image Tampering Using Statistical Analysis](https://doi.org/10.5281/zenodo.4130382), Md. Zahurul Haque, **Md Mahedi Hasan** 
-
 
 # 📝 Research Grants
 ## Multi-Finger Contactless Fingerprint Matching
@@ -116,14 +111,7 @@ Annotating automatic target recognition (ATR) is a highly challenging task, prim
 -   Project Title: **A Perpetual Deep Face Recognition System**
 -   <p align="justify">My Role in the Project: I wrote the proposal with Prof. Nasser. I designed the class-incremental learning framework which can learn and improve from a sequence of face recognition tasks without storing any exemplar sets. I successfully completed all the project milestones. I presented the progress and the final report. </p>
 
-
 # 📝 Research Projects
-### Medical Image Classification
-- Project Title: Early Detection and Grading of Diabetic Retinopathy Using Retinal Fundus Images
-- Period: 1 Year (10/14/2017 - 10/30/2018)
-- Description: We developed a novel deep convolutional neural network, which performs the early-stage detection by identifying all microaneurysms (MAs), the first signs of DR, along with correctly assigning labels to retinal fundus images which are graded into five categories. We have tested our network on the largest publicly available Kaggle diabetic retinopathy dataset, and achieved 0.851 quadratic weighted kappa score and 0.844 AUC score.
--  Resources: [\[paper\]](https://arxiv.org/abs/1812.10595) 
-
 ### License Plate Recognition
 -  Project Title: Real-time Automatic Bangla License Plate Detection and Recognition
 -  Period: 1 Year (05/01/2018 - 04/30/2019)
