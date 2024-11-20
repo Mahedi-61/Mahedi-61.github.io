@@ -13,3 +13,33 @@
 - *2021.06*: I joined the Deep Learning Lab at WVU to work under [Prof. Nasser Nasrabadi](https://ep.jhu.edu/faculty/nasser-nasrabadi/) as a PhD researcher!
 - *2021.04*: 🎉 Our journal on [Gait Recognition](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/cvi2.12050) has been publied in **IET Computer Vision** journal.
 - *2020.09*: 🔥 I defended my M.Sc. thesis at [IICT, BUET](https://iict.buet.ac.bd/). Thanks to [Dr. Hossen Asiful Mustafa](https://iict.buet.ac.bd/?page_id=54) for your invaluable supervision.
+
+# 📖 Educations
+### *2021.16 -*
+- West Virginia University ([WVU](https://www.wvu.edu))
+- Doctor of Philosophy degree in Computer Engineering (CE)
+- Advisor: [Dr. Nasser M. Nasrabadi](https://nassernasrabadi.faculty.wvu.edu/), Professor, LCSEE, WVU
+
+
+### *2014.10 - 2020.09*
+- Bangladesh University of Engineering and Technology ([BUET](https://www.buet.ac.bd/web/))
+- M.Sc. in Information and Communication Technology (ICT) 
+- Thesis: View Invariant Gait Recognition for Person Re-Identification in a Multi Surveillance Camera Environment [\[HTML\]](http://lib.buet.ac.bd:8080/xmlui/handle/123456789/5880), [\[Code\]]()
+- Advisor: [Dr. Hossen Asiful Mustafa](https://iict.buet.ac.bd/?page_id=54), Professor, IICT, BUET
+
+
+### *2008.12 - 2013.09* 
+- Khulna University of Engineering and Technology ([KUET](https://kuet.ac.bd/))
+- B.Sc. in Electrical and Electronic Engineering
+
+
+# 💬 Professional Experience
+- [\[*2021.06 - *\]] Graduate researcher at West Virginia University ([WVU](https://www.wvu.edu)) 
+- [\[*2021.06 - *\2023.08]] Graduate researcher at Center for Identification Technology Research ([CITer](https://citer.clarkson.edu/)) 
+- [\[*2019.04 - *\2021.06]] Teaching Faculty at Manarat International University ([MIU](https://manarat.ac.bd/)), Department of Computer Science and Engineering (CSE)
+<!---
+# 💻 Internships>
+- *2019.05 - 2020.02*, [EnjoyMusic](https://enjoymusic.ai/), Hangzhou.
+- *2019.02 - 2019.05*, [YiWise](https://www.yiwise.com/), Hangzhou.
+- *2018.08 - 2019.02*, [MSRA, machine learning Group](https://www.microsoft.com/en-us/research/group/
+-->

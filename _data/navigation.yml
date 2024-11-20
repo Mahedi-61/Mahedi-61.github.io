@@ -9,8 +9,8 @@ main:
   - title: "Educations"
     url: "/#-educations"
 
-  - title: "Academic Activities"
-    url: "/#-academic-activities"
+  - title: "Professional Experience"
+    url: "/#-professional-experience"
     
   - title: "Publications"
     url: "/#-publications"
@@ -23,7 +23,10 @@ main:
 
   - title: "Awards"
     url: "/#-awards"
-    
+
+  - title: "Reviewing"
+    url: "/#-reviewing"
+
   - title: "Teaching"
     url: "/#-teaching"
 
