@@ -1,21 +1,25 @@
 
 # 📝 Publications 
-## 🎼 Automatic Target Recognition
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TAES 2023</div><img src='images/TAES_2023.png' alt="sym" width="100%"></div></div>
+## 🧑‍🎨 Face Recognition
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TBIOM 2024</div><img src='images/tbiom_2024.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Contrastive Learning and Cycle Consistency-Based Transductive Transfer Learning for Target Annotation](https://doi.org/10.1109/TAES.2023.3337768) \\
-Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao
-- We propose a hybrid contrastive learning base unpaired domain translation (H-CUT) network that achieves a significantly lower FID score. It incorporates both attention and entropy to emphasize the domain-specific region, a noisy feature mixup module to generate high variational synthetic negative patches, and a modulated noise contrastive estimation (MoNCE) loss to reweight all negative patches using optimal transport for better performance. 
-- Our proposed contrastive learning and cycle-consistency-based TTL (C3TTL) framework consists of two H-CUT networks and two classifiers.
+[Learning Multi-Scale Knowledge-Guided Features for Text-Guided Face Recognition](https://doi.org/10.1109/TBIOM.2024.3466216) \\
+**Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition)
+<details>
+  <summary>Abstract</summary>
+  ### Hidden Content
+Text-guided face recognition (TGFR) aims to improve the performance of state-of-the-art face recognition (FR) algorithms by incorporating auxiliary information, such as distinct facial marks and attributes, provided as natural language descriptions. Current TGFR algorithms have been proven to be highly effective in addressing performance drops in state-of-the-art FR models, particularly in scenarios involving sensor noise, low resolution, and turbulence effects. Although existing methods explore various algorithms using different cross-modal alignment and fusion techniques, they encounter practical limitations in real-world applications. For example, during inference, textual descriptions associated with face images may be missing, lacking crucial details, or incorrect. Furthermore, the presence of inherent modality heterogeneity poses a significant challenge in achieving effective cross-modal alignment. To address these challenges, we introduce CaptionFace, a TGFR framework that integrates GPTFace, a face image captioning model designed to generate context-rich natural language descriptions from low-resolution facial images. By leveraging GPTFace, we overcome the issue of missing textual descriptions, expanding the applicability of CaptionFace to single-modal FR datasets. Additionally, we introduce a multi-scale feature alignment (MSFA) module to ensure semantic alignment between face-caption pairs at different granularities. Furthermore, we introduce an attribute-aware loss and perform knowledge adaptation to specifically adapt textual knowledge from facial features. Extensive experiments on three face-caption datasets and various unconstrained single-modal benchmark datasets demonstrate that CaptionFace significantly outperforms state-of-the-art FR models and existing TGFR approaches.
+</details>
+
 </div>
 </div>
 
-## 🧑‍🎨 Face Recognition
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV 2024</div><img src='images/wacv_2024.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Text-Guided Face Recognition using Multi-Granularity Cross-Modal Contrastive Learning](https://arxiv.org/abs/2312.09367) \\
+[Text-Guided Face Recognition using Multi-Granularity Cross-Modal Contrastive Learning](https://openaccess.thecvf.com/content/WACV2024/html/Hasan_Text-Guided_Face_Recognition_Using_Multi-Granularity_Cross-Modal_Contrastive_Learning_WACV_2024_paper.html) \\
 **Md Mahedi Hasan**, Shoaib Meraj Sami, and Nasser Nasrabadi. [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition) [\[video\]](https://www.youtube.com/watch?v=Hb8SlpFCuGI)
 
 - We introduce text-guided face recognition (TGFR) to analyze the impact of integrating facial attributes in the form of natural language descriptions while we hypothesize that adding semantic information into the loop can significantly improve the image understanding capability of an FR algorithm compared to other soft biometrics. 
@@ -26,11 +30,22 @@ Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCB 2024</div><img src='images/IJCB_2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Improving Face Recognition from Caption Supervision with Multi-Granular Contextual Feature Aggregation](https://arxiv.org/abs/2308.06866) \\
-**Md Mahedi Hasan**, and Nasser Nasrabadi. [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition)
+[Improving Face Recognition from Caption Supervision with Multi-Granular Contextual Feature Aggregation](https://doi.org/10.1109/IJCB57857.2023.10448749) \\
+**Md Mahedi Hasan**, and Nasser Nasrabadi.
 -  We introduce caption-guided face recognition (CGFR) as a new framework to improve the performance of commercial-off-the-shelf (COTS) face recognition (FR) systems. 
 - We propose a contextual feature aggregation module (CFAM) that addresses this issue by effectively exploiting the fine-grained word-region interaction and global image-caption association. Specifically, CFAM adopts a self-attention and a cross-attention scheme for improving the intra-modality and inter-modality relationship between the image and textual features, respectively. 
 - We also design a textual feature refinement module (TFRM) that refines the textual features of the pre-trained BERT encoder by updating the contextual embeddings. 
+</div>
+</div>
+
+## 🎼 Automatic Target Recognition
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TAES 2023</div><img src='images/TAES_2023.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Contrastive Learning and Cycle Consistency-Based Transductive Transfer Learning for Target Annotation](https://doi.org/10.1109/TAES.2023.3337768) \\
+Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao
+- We propose a hybrid contrastive learning base unpaired domain translation (H-CUT) network that achieves a significantly lower FID score. It incorporates both attention and entropy to emphasize the domain-specific region, a noisy feature mixup module to generate high variational synthetic negative patches, and a modulated noise contrastive estimation (MoNCE) loss to reweight all negative patches using optimal transport for better performance. 
+- Our proposed contrastive learning and cycle-consistency-based TTL (C3TTL) framework consists of two H-CUT networks and two classifiers.
 </div>
 </div>
 

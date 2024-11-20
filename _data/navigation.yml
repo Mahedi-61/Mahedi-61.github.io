@@ -6,6 +6,12 @@ main:
   - title: "News"
     url: "/#-news"
 
+  - title: "Educations"
+    url: "/#-educations"
+
+  - title: "Academic Activities"
+    url: "/#-academic-activities"
+    
   - title: "Publications"
     url: "/#-publications"
     
@@ -17,12 +23,6 @@ main:
 
   - title: "Awards"
     url: "/#-awards"
-
-  - title: "Educations"
-    url: "/#-educations"
-
-  - title: "Academic Activities"
-    url: "/#-academic-activities"
     
   - title: "Teaching"
     url: "/#-teaching"
