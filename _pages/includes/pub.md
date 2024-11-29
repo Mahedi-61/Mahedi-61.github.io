@@ -5,7 +5,7 @@
 
 [Learning Multi-Scale Knowledge-Guided Features for Text-Guided Face Recognition](https://doi.org/10.1109/TBIOM.2024.3466216) \\
  IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM)\\
-**Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition)
+**Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[code\]](https://github.com/Mahedi-61/CaptionFace)
 <details>
 <summary>Abstract</summary>
 Text-guided face recognition (TGFR) aims to improve the performance of state-of-the-art face recognition (FR) algorithms by incorporating auxiliary information, such as distinct facial marks and attributes, provided as natural language descriptions. Current TGFR algorithms have been proven to be highly effective in addressing performance drops in state-of-the-art FR models, particularly in scenarios involving sensor noise, low resolution, and turbulence effects. Although existing methods explore various algorithms using different cross-modal alignment and fusion techniques, they encounter practical limitations in real-world applications. For example, during inference, textual descriptions associated with face images may be missing, lacking crucial details, or incorrect. Furthermore, the presence of inherent modality heterogeneity poses a significant challenge in achieving effective cross-modal alignment. To address these challenges, we introduce CaptionFace, a TGFR framework that integrates GPTFace, a face image captioning model designed to generate context-rich natural language descriptions from low-resolution facial images. By leveraging GPTFace, we overcome the issue of missing textual descriptions, expanding the applicability of CaptionFace to single-modal FR datasets. Additionally, we introduce a multi-scale feature alignment (MSFA) module to ensure semantic alignment between face-caption pairs at different granularities. Furthermore, we introduce an attribute-aware loss and perform knowledge adaptation to specifically adapt textual knowledge from facial features. Extensive experiments on three face-caption datasets and various unconstrained single-modal benchmark datasets demonstrate that CaptionFace significantly outperforms state-of-the-art FR models and existing TGFR approaches.
@@ -16,9 +16,10 @@ Text-guided face recognition (TGFR) aims to improve the performance of state-of-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV 2024</div><img src='images/wacv_2024.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Text-Guided Face Recognition using Multi-Granularity Cross-Modal Contrastive Learning](https://openaccess.thecvf.com/content/WACV2024/html/Hasan_Text-Guided_Face_Recognition_Using_Multi-Granularity_Cross-Modal_Contrastive_Learning_WACV_2024_paper.html) \\
+Text-Guided Face Recognition using Multi-Granularity Cross-Modal Contrastive Learning \\
 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2024) \\
-**Md Mahedi Hasan**, Shoaib Meraj Sami, and Nasser Nasrabadi. [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition) [\[video\]](https://www.youtube.com/watch?v=Hb8SlpFCuGI)
+**Md Mahedi Hasan**, Shoaib Meraj Sami, and Nasser Nasrabadi. [\[HTML\]](https://openaccess.thecvf.com/content/WACV2024/html/Hasan_Text-Guided_Face_Recognition_Using_Multi-Granularity_Cross-Modal_Contrastive_Learning_WACV_2024_paper.html) [\[PDF\]](https://openaccess.thecvf.com/content/WACV2024/papers/Hasan_Text-Guided_Face_Recognition_Using_Multi-Granularity_Cross-Modal_Contrastive_Learning_WACV_2024_paper.pdf) [\[video\]](https://www.youtube.com/watch?v=Hb8SlpFCuGI) [![](https://img.shields.io/github/stars/Mahedi-61/Text_Guided_Face_Recognition?style=social&label=Code+Stars)](https://github.com/Mahedi-61/Text_Guided_Face_Recognition) 
+
 
 <details>
 <summary>Abstract</summary>
@@ -46,7 +47,7 @@ We introduce caption-guided face recognition (CGFR) as a new framework to improv
 
 [CLFace: A Scalable and Resource-Efficient Continual Learning Framework for Lifelong Face Recognition]() \\
 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025) \\
-**Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[code\]]()
+**Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[code\]](https://github.com/Mahedi-61/CLFace)
 <details>
 <summary>Abstract</summary>
 An important aspect of deploying face recognition (FR) algorithms in real-world applications is their ability to learn new face identities from a continuous data stream. However, the online training of existing deep neural network-based FR algorithms, which are pre-trained offline on large-scale stationary datasets, encounter two major challenges: 1. catastrophic forgetting of previously learned identities, and 2. the need to store past data for complete retraining from scratch, leading to significant storage constraints and privacy concerns. In this paper, we introduce CLFace, a continual learning framework designed to preserve and incrementally extend the learned knowledge. CLFace eliminates the classification layer, resulting in a resource-efficient FR model that remains fixed throughout lifelong learning and provides label-free supervision to a student model, making it suitable for open-set face recognition during incremental steps. We introduce an objective function that employs feature-level distillation to reduce drift between feature maps of the student and teacher models across multiple stages. Additionally, it incorporates a geometry-preserving distillation scheme to maintain the orientation of the teacher model's feature embedding. Furthermore, a contrastive knowledge distillation is incorporated to continually enhance the discriminative power of the feature representation by matching similarities between new identities. Experiments on several benchmark FR datasets demonstrate that CLFace outperforms baseline approaches and state-of-the-art methods on unseen identities using both in-domain and out-of-domain datasets.
@@ -75,7 +76,7 @@ Annotating automatic target recognition (ATR) is a highly challenging task, prim
 
 ## 🎼 Gait Recognition
 - `IET Computer Vision 2021` [Learning view-invariant features using stacked autoencoder for skeleton-based gait recognition](https://doi.org/10.1049/cvi2.12050), **Md Mahedi Hasan**, and Hossen Asiful Mustafa. 
-- `IJCSIS 2021` [Multi-level feature fusion for robust pose-based gait recognition using RNN](https://www.academia.edu/download/61987403/03_Paper_01012007_IJCSIS_Camera_Ready_pp20-3120200204-65998-gq509w.pdf), **Md Mahedi Hasan**, and Hossen Asiful Mustafa. <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:r0BpntZqJG4C'></span></strong>
+- `IJCSIS 2021` [Multi-level feature fusion for robust pose-based gait recognition using RNN](https://www.academia.edu/download/61987403/03_Paper_01012007_IJCSIS_Camera_Ready_pp20-3120200204-65998-gq509w.pdf), **Md Mahedi Hasan**, and Hossen Asiful Mustafa. 
 
 ## Others
 - `ETCCE 2021` [A deep Spatio-temporal network for vision-based sexual harassment detection](https://doi.org/10.1109/ETCCE54784.2021.9689891), Md Shamimul Islam, **Md Mahedi Hasan**, Sohaib Abdullah, et al.

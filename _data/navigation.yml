@@ -1,5 +1,8 @@
 # main links links
 main:
+  - title: "Resume"
+    url: "/_pages/resume_mahedi.pdf"
+
   - title: "About Me"
     url: "/#about-me"
 

@@ -4,7 +4,6 @@
 - Reviewer at **IEEE Transactions on Automation Science and Engineering**
 - Reviewer at **IEEE Transactions on Circuits and Systems for Video Technology**
 - Reviewer at **IEEE Transactions on Power Delivery**
-- Reviewer at **IEEE Transactions on Power Delivery**
 - Reviewr at **Engineering Applications of Artificial Intelligence, ELSEVIER**
 - Reviewr at **Pattern recognition**
 
