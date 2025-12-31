@@ -1,5 +1,19 @@
 # 📝 Publications 
-## 🧑‍🎨 Face Recognition
+# 📚 Vision-Language Modeling
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">BMVC 2025</div><img src='images/bmvc_2025.png' alt="sym" width="80%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+FaceCPT: Toward Cross-Modal Facial Representation Learning with Face-Caption Pre-Training \\
+36th British Machine Vision Conference (BMVC) 2025\\
+**Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[PDF\]](https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_898/paper.pdf) [\[CODE\]](https://github.com/Mahedi-61/CaptionFace)
+<details>
+<summary>Abstract</summary>
+Facial representation learning (FRL) through weakly-supervised pre-training has shown significant promise across various downstream tasks, highlighting its improved generalizability. However, most existing FRL models excel only in face generation and analysis, and there is a lack of models that address cross-modal tasks. To fill this gap, we pose the following question: Can we learn a universal facial representation by pre-training on web-sourced face-caption pairs for surveillance-related tasks? These tasks include both cross-modal understanding, such as face captioning and text-based face image retrieval, as well as face analysis tasks like face, attribute, expression recognition, and age estimation. In this paper, we take a step toward this objective by introducing FaceCPT, a new framework for learning facial representation using Face Caption Pre-Training. However, domain misalignment and information asymmetry between image-text pairs challenge the model’s ability to achieve a meaningful interaction. To overcome this, we utilize contrastive learning along with a semantic attribute-aware loss (SAAL) to improve the semantic associations between face-caption pairs and encourage the model to focus on key semantic attributes, respectively. Experiments show that FaceCPT outperforms existing vision-language pre-training and FRL baselines, achieving state-of-the-art results in task-specific fine-tuning and improved zero-shot transferability across both single-modal and cross-modal tasks, even with low-resolution inputs.
+</details>
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TBIOM 2024</div><img src='images/tbiom_2024.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -13,13 +27,13 @@ Text-guided face recognition (TGFR) aims to improve the performance of state-of-
 </div>
 </div>
 
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV 2024</div><img src='images/wacv_2024.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 Text-Guided Face Recognition using Multi-Granularity Cross-Modal Contrastive Learning \\
 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2024) \\
 **Md Mahedi Hasan**, Shoaib Meraj Sami, and Nasser Nasrabadi. [\[HTML\]](https://openaccess.thecvf.com/content/WACV2024/html/Hasan_Text-Guided_Face_Recognition_Using_Multi-Granularity_Cross-Modal_Contrastive_Learning_WACV_2024_paper.html) [\[PDF\]](https://openaccess.thecvf.com/content/WACV2024/papers/Hasan_Text-Guided_Face_Recognition_Using_Multi-Granularity_Cross-Modal_Contrastive_Learning_WACV_2024_paper.pdf) [\[Video\]](https://www.youtube.com/watch?v=Hb8SlpFCuGI) [![](https://img.shields.io/github/stars/Mahedi-61/Text_Guided_Face_Recognition?style=social&label=Code+Stars)](https://github.com/Mahedi-61/Text_Guided_Face_Recognition) 
-
 
 <details>
 <summary>Abstract</summary>
@@ -28,20 +42,8 @@ State-of-the-art face recognition (FR) models often experience a significant per
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCB 2024</div><img src='images/IJCB_2023.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-Improving Face Recognition from Caption Supervision with Multi-Granular Contextual Feature Aggregation \\
-2023 IEEE International Joint Conference on Biometrics (IJCB 2023) \\
-**Md Mahedi Hasan**, and Nasser Nasrabadi. [\[HTML\]](https://doi.org/10.1109/IJCB57857.2023.10448749) [\[PDF\]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10448749) [\[CODE\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition) 
-<details>
-<summary>Abstract</summary>
-We introduce caption-guided face recognition (CGFR) as a new framework to improve the performance of commercial-off-the-shelf (COTS) face recognition (FR) systems. In contrast to combining soft biometrics (eg., facial marks, gender, and age) with face images, in this work, we use facial descriptions provided by face examiners as a piece of auxiliary information. However, due to the heterogeneity of the modalities, improving the performance by directly fusing the textual and facial features is very challenging, as both lie in different embedding spaces. In this paper, we propose a contextual feature aggregation module (CFAM) that addresses this issue by effectively exploiting the fine-grained word-region interaction and global image-caption association. Specifically, CFAM adopts a self-attention and a cross-attention scheme for improving the intra-modality and inter-modality relationship between the image and textual features, respectively. Additionally, we design a textual feature refinement module (TFRM) that refines the textual features of the pre-trained BERT encoder by updating the contextual embeddings. This module enhances the discriminative power of textual features with a cross-modal projection loss and realigns the word and caption embeddings with visual features by incorporating a visual-semantic alignment loss. We implemented the proposed CGFR framework on two face recognition models (ArcFace and AdaFace) and evaluated its performance on the Multi-Modal CelebA-HQ dataset. Our framework significantly improves the performance of ArcFace in both 1:1 verification and 1:N identification protocol.
-</details>
-</div>
-</div>
-
-## 🧑‍🎨 Continual Learning
+## 📚 Continual Learning
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV 2025</div><img src='images/wacv_2025.png' alt="sym" width="90%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -55,77 +57,87 @@ An important aspect of deploying face recognition (FR) algorithms in real-world 
 </div>
 </div>
 
-## 🎼 Automatic Target Recognition
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TAES 2024</div><img src='images/TAES_2024.png' alt="sym" width="100%"></div></div>
+## 🧑‍🎨 Face Recognition
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCB 2024</div><img src='images/IJCB_2023.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Contrastive Learning and Cycle Consistency-Based Transductive Transfer Learning for Target Annotation \\
-IEEE Transactions on Aerospace and Electronic Systems (TAES 2024) \\
-Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao [\[HTML\]](https://doi.org/10.1109/TAES.2023.3337768)
+Improving Face Recognition from Caption Supervision with Multi-Granular Contextual Feature Aggregation \\
+2023 IEEE International Joint Conference on Biometrics (IJCB 2023) \\
+**Md Mahedi Hasan**, and Nasser Nasrabadi. [\[HTML\]](https://doi.org/10.1109/IJCB57857.2023.10448749) [\[PDF\]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10448749) [\[CODE\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition) 
 <details>
 <summary>Abstract</summary>
-Annotating automatic target recognition (ATR) is a highly challenging task, primarily due to the unavailability of labeled data in the target domain. Hence, it is essential to construct an optimal target domain classifier by utilizing the labeled information of the source domain images. The transductive transfer learning (TTL) method that incorporates a CycleGAN-based unpaired domain translation network has been previously proposed in the literature for effective ATR annotation. Although this method demonstrates great potential for ATR, it severely suffers from lower annotation performance, higher Fréchet inception distance (FID) score, and the presence of visual artifacts in the synthetic images. To address these issues, we propose a hybrid contrastive learning base unpaired domain translation (H-CUT) network that achieves a significantly lower FID score. It incorporates both attention and entropy to emphasize the domain-specific region, a noisy feature mixup module to generate high variational synthetic negative patches, and a modulated noise contrastive estimation (MoNCE) loss to reweight all negative patches using optimal transport for better performance. Our proposed contrastive learning and cycle-consistency-based TTL (C3TTL) framework consists of two H-CUT networks and two classifiers. It simultaneously optimizes cycle-consistency, MoNCE, and identity losses. In C3TTL, two H-CUT networks have been employed through a bijection mapping to feed the reconstructed source domain images into a pretrained classifier to guide the optimal target domain classifier. Extensive experimental analysis conducted on six ATR datasets demonstrates that the proposed C3TTL method is effective in annotating civilian and military vehicles, ships, planes, and human targets.
+We introduce caption-guided face recognition (CGFR) as a new framework to improve the performance of commercial-off-the-shelf (COTS) face recognition (FR) systems. In contrast to combining soft biometrics (eg., facial marks, gender, and age) with face images, in this work, we use facial descriptions provided by face examiners as a piece of auxiliary information. However, due to the heterogeneity of the modalities, improving the performance by directly fusing the textual and facial features is very challenging, as both lie in different embedding spaces. In this paper, we propose a contextual feature aggregation module (CFAM) that addresses this issue by effectively exploiting the fine-grained word-region interaction and global image-caption association. Specifically, CFAM adopts a self-attention and a cross-attention scheme for improving the intra-modality and inter-modality relationship between the image and textual features, respectively. Additionally, we design a textual feature refinement module (TFRM) that refines the textual features of the pre-trained BERT encoder by updating the contextual embeddings. This module enhances the discriminative power of textual features with a cross-modal projection loss and realigns the word and caption embeddings with visual features by incorporating a visual-semantic alignment loss. We implemented the proposed CGFR framework on two face recognition models (ArcFace and AdaFace) and evaluated its performance on the Multi-Modal CelebA-HQ dataset. Our framework significantly improves the performance of ArcFace in both 1:1 verification and 1:N identification protocol.
 </details>
 </div>
 </div>
+
+## 📚 Automatic Target Recognition
+- `IEEE Transactions on Aerospace and Electronic Systems (TAES 2024)` FDCT: Frequency-Aware Decomposition and Cross-Modal Token-Alignment for Multi-Sensor Target Classification, Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao [\[HTML\]](https://ieeexplore.ieee.org/abstract/document/10924416) [\[PDF\]](https://ieeexplore.ieee.org/iel8/7/7778228/10924416.pdf)
+
+- `IEEE Transactions on Aerospace and Electronic Systems (TAES 2024)` Contrastive Learning and Cycle Consistency-Based Transductive Transfer Learning for Target Annotation, Shoaib Meraj Sami, **Md Mahedi Hasan**, Nasser Nasrabadi, Raghuveer Rao [\[HTML\]](https://doi.org/10.1109/TAES.2023.3337768) [\[PDF\]](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10336388)
+
 
 ## 📚 Fingerprint Recognition 
 - `IET Biometrics 2023` On Improving Interoperability for Cross-Domain Multi-Finger Fingerprint Matching Using Coupled Adversarial Learning, **Md Mahedi Hasan**, Nasser Nasrabadi, and Jeremy Dawson [\[HTML\]](https://doi.org/10.1049/bme2.12117) [\[PDF\]](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/bme2.12117)
 - `BIOSIG 2022` <span style="color:red">[Oral]</span> Deep Coupled GAN-Based Score-Level Fusion for Multi-Finger Contact to Contactless Fingerprint Matching, **Md Mahedi Hasan**, Nasser Nasrabadi, and Jeremy Dawson [\[HTML\]](https://doi.org/10.1109/BIOSIG55365.2022.9897056) [\[PDF\]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9897056) [\[CODE\]](https://github.com/Mahedi-61/CoupledVerifier)
 
 
-## 🎼 Gait Recognition
+## 📚 Gait Recognition
 - `IET Computer Vision 2021` Learning view-invariant features using stacked autoencoder for skeleton-based gait recognition, **Md Mahedi Hasan**, and Hossen Asiful Mustafa. [\[HTML\]](https://doi.org/10.1049/cvi2.12050) [\[PDF\]](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/cvi2.12050) [![](https://img.shields.io/github/stars/Mahedi-61/temporal_network?style=social&label=Code+Stars)](https://github.com/Mahedi-61/temporal_network)
 - `IJCSIS 2021` Multi-level feature fusion for robust pose-based gait recognition using RNN, **Md Mahedi Hasan**, and Hossen Asiful Mustafa. [\[PDF\]](https://www.academia.edu/download/61987403/03_Paper_01012007_IJCSIS_Camera_Ready_pp20-3120200204-65998-gq509w.pdf)
 
 ## Others
-- `ETCCE 2021` [A deep Spatio-temporal network for vision-based sexual harassment detection](https://doi.org/10.1109/ETCCE54784.2021.9689891), Md Shamimul Islam, **Md Mahedi Hasan**, Sohaib Abdullah, et al.
 - ``Book Chapter 2020`` [Deep Learning based Early Detection and Grading of Diabetic Retinopathy Using Retinal Fundus Images](http://dx.doi.org/10.1201/9781003031352-6), Sheikh Muhammad Saiful Islam, **Md Mahedi Hasan**, Sohaib Abdullah <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:R3hNpaxXUhUC'></span></strong> [arXiv](https://arxiv.org/abs/1812.10595)
 - `RAAICON 2019` [Robust Pose-Based Human Fall Detection using Recurrent Neural Network](https://doi.org/10.1109/RAAICON48939.2019.23), **Md Mahedi Hasan**, Md Shamimul Islam, Sohaib Abdullah <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:maZDTaKrznsC'></span></strong> 
-- `ICBSLP 2019` [Aibangla: A Benchmark Dataset for Isolated Bangla Handwritten Basic and Compound Character Recognition](https://doi.org/10.1109/ICBSLP47725.2019.201481), **Md Mahedi Hasan**, Mahathir Mohammad Abir, et al. [\[dataset\]](https://doi.org/10.17632/hf2tt9kxkn.1)
 - `ICBSLP 2018` [YOLO-Based Three-Stage Network for Bangla License Plate Recognition in Dhaka Metropolitan City](https://doi.org/10.1109/ICBSLP.2018.8554668), Sohaib Abdullah, **Md Mahedi Hasan**, Sheikh Muhammad Saiful Islam <span class='show_paper_citations' data='m3MlVBUAAAAJ:HDshCWvjkbEC'></span> [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition), [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset)
-- `ICCIT 2018` [DEEPGONET: Multi-label Prediction of GO Annotation for Protein from Sequence Using Cascaded Convolutional and Recurrent Network](https://doi.org/10.1109/ICCITECHN.2018.8631921), Sheikh Muhammad Saiful Islam, **Md Mahedi Hasan** 
 
-# 📝 Research Grants
-## Multi-Finger Contactless Fingerprint Matching
--   PI Name: Jeremy M. Dawson, Nasser M. Nasrabadi
--   Name of Funding Organization: [CITer](https://citer.clarkson.edu/) (Project \#21S-04W),  IUCRC - NSF
--   Period of Grant Award: 1 Year (08/13/2021 - 08/12/2022)
--   Amount: $50,000
--   Project Title: **Evaluation of the Performance of Multi-Finger Contactless Fingerprint Matching**
--   <p align="justify">My Role in the Project: I developed an algorithm for multi-finger contactless fingerprint matching. I successfully achieved all project milestones under the supervision of the PIs. I presented the final report and webinar, along with publishing two academic papers based on the experimental results. </p>
-
-## One-to-One Face Recognition
--   PI Name: Nasser M. Nasrabadi, Jeremy M. Dawson
--   Name of Funding Organization: [CITer](https://citer.clarkson.edu/) (Project #22S-06W),  IUCRC - NSF
--   Period of Grant Award: 1 Year (11/05/2022 - 04/21/2023)
--   Amount: $50,000
--   Project Title: **One-to-One Face Recognition with Human Examiner in the Loop**
--   <p align="justify">My Role in the Project: I developed a text-guided face recognition (FR) system to improve the performance of state-of-the-art FR algorithms by integrating facial attributes through natural language descriptions. I successfully met all project milestones under the supervision of the PIs. I presented both the progress report and the final report, and additionally published two academic papers.</p>
-
-## Deep Face Recognition
--   PI Name: Nasser M. Nasrabadi, **Md Mahedi Hasan**
--   Name of Funding Organization: [CITer](https://citer.clarkson.edu/) (Project #22F-01W),  IUCRC - NSF
--   Period of Grant Award: 1 Year (09/03/2022 - 10/25/2023)
--   Amount: $50,000
--   Project Title: **A Perpetual Deep Face Recognition System**
--   <p align="justify">My Role in the Project: I wrote the proposal with Prof. Nasser. I designed the class-incremental learning framework which can learn and improve from a sequence of face recognition tasks without storing any exemplar sets. I successfully completed all the project milestones. I presented the progress and the final report. </p>
 
 # 📝 Research Projects
-### License Plate Recognition
--  Project Title: Real-time Automatic Bangla License Plate Detection and Recognition
--  Period: 1 Year (05/01/2018 - 04/30/2019)
+## Optimizing Foundation Models for Edge Computing Platforms (2025.08 - 2028.08)
+-   Name of Funding Organization: Qualcomm
+-   <p align="justify">Contribution:
+    - Designed a Conv-LoRA–based domain adaptation technique to fine-tune the Segment Anything Model (SAM), for defect segmentation, reducing training cost by 40% and enabling edge-device deployment.
+    - Developing self-supervised techniques to optimize foundation models for tasks with limited manually annotated data.
+</p>
+
+## Super-Resolution Object Characterization in Low Earth Orbit (2023.08 - 2025.05)
+-   Name of Funding Organization: Department of Defense (DoD)(USAF, \#FA8649-23-P-0408)
+-   <p align="justify">Contribution:
+    - Designed an SRGAN-based super-resolution framework for diverse target chips detected and cropped by the Innovative Target Chipping (ITC) module, enhancing real-time detection of space objects.
+    - Developed an adapted Multi-Scale SRGAN module to perform super-resolution with up-scaling factors of 4 and 8, improving the fidelity of satellite image patches for downstream analysis.
+</p>
+
+## A Perpetual Deep Face Recognition System (2022.09 - 2023.10)
+-   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#22F-01W)
+-   <p align="justify">Contribution: 
+    - Designed and implemented the complete research pipeline, including data preprocessing, model development, training, and evaluation.
+    - Built a class-incremental continual learning framework, CLFace, for face recognition that enables consistent performance improvement across sequential tasks, and mitigates catastrophic forgetting</p>
+    
+## One-to-One Face Recognition with Human Examiner in the Loop (2022.05 - 2023.04)
+-   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#22S-06W)
+-   <p align="justify">Contribution:
+    - Developed CaptionFace, a text-guided face recognition framework that enhances state-of-the-art face recognition models by integrating facial attribute information through natural language descriptions.
+    - Proposed GPTFace, a vision–language captioning model that combines ViT-B/16 and GPT-2 to generate semantic descriptions from low-resolution facial images, achieving a 7% improvement in zero-shot retrieval performance.</p>
+
+## 2023 Incomplete Fingerprint Records and Matching (2023.08, 2024.08)
+-   Name of Funding Organization: Federal Bureau of Investigation (FBI)
+-   <p align="justify">Contribution: 
+    - Conducted multi-finger fusion across all ten fingers using commercially off-the-shelf fingerprint matchers and performed comprehensive performance analysis.</p>
+
+## Evaluation of the Performance of Multi-Finger Contactless Fingerprint Matching (2021.08, 2022.08)
+-   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#21S-04W)
+-   <p align="justify">Contribution: 
+    - Developed a Coupled-GAN–based framework to improve multi-finger contactless fingerprint matching and enhance contact-to-contactless fingerprint interoperability, achieving an 11.68% improvement in TAR at FAR = 0.01% over prior state-of-the-art methods.</p>
+
+# 📝 Datasets
+### Real-time Automatic Bangla License Plate Recognition Datasets (2018.05 - 2019.04)
 -  Description: We have developed a real-time automatic Bangla license plate recognition system based on YOLO-v3. Additionally, we curated a dataset comprising 1,500 diverse images of Bangladeshi vehicular license plates. These images were manually captured from streets, simulating various real-world scenarios. This project is funded by department of CSE, Manarat International University ([MIU](https://manarat.ac.bd/)).
--  Resources: [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset), [\[paper\]](https://doi.org/10.1109/ICBSLP.2018.8554668) 
+-  Resources: [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset), [\[report\]](https://doi.org/10.1109/ICBSLP.2018.8554668) 
 
-### Bangla Handwritten Character Recognition
--  Project Title: Deep Isolated Bangla Handwritten Basic and Compound Character Recognition
--  Period: 1 Year (01/12/2018 - 12/30/2018)
+### Deep Isolated Bangla Handwritten Basic and Compound Character Recognition Datasets (2018.01 - 2018.12)
 -  Description: We present AIBangla, a new benchmark image database for isolated handwritten Bangla characters with detailed usage and a performance baseline. Our dataset contains 80,403 hand-written images on 50 Bangla basic characters and 249,911 hand-written images on 171 Bangla compound characters which were written by more than 2,000 unique writers from various institutes across Bangladesh. This project is funded by department of CSE, Manarat International University ([MIU](https://manarat.ac.bd/))
--  Resources: [\[dataset\]](https://doi.org/10.17632/hf2tt9kxkn.1), [\[paper\]](https://doi.org/10.1109/ICBSLP47725.2019.201481) 
+-  Resources: [\[dataset\]](https://doi.org/10.17632/hf2tt9kxkn.1), [\[report\]](https://doi.org/10.1109/ICBSLP47725.2019.201481) 
 
-### Bangla Sign Language Recognition
--  Project Title: Deep Bangla Sign Language Recognition from Video: A New Large-scale Dataset
--  Period: 2 Year (11/05/2021 - 04/05/2023)
+### Deep Bangla Sign Language Recognition from Video: A New Large-scale Dataset (2020.05 - 2022.05)
 - Description: We have developed an attention-based Bi-GRU model that captures the temporal dynamics of pose information used by individuals communicating through sign language. Furthermore, we created a large-scale dataset called the MVBSL-W50, which comprises 50 isolated words across 13 categories. 
-- Resources: [\[dataset\]](https://github.com/Mahedi-61/MV-BSDL), [\[paper\]](https://arxiv.org/abs/2302.11559)
+- Resources: [\[dataset\]](https://github.com/Mahedi-61/MV-BSDL), [\[report\]](https://arxiv.org/abs/2302.11559)

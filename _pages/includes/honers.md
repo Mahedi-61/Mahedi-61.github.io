@@ -1,3 +1,3 @@
-# 🎖 Awards
-- **2022.11** Best Poster Award in [CITer](https://citer.clarkson.edu/) Fall Program Review
-- **2009-2012** University Merit Scholarship (Undergraduate) (All eight terms of undergraduate study from the Govt. of the People’s Republic of Bangladesh)
+# 🎖 Fellowships and Awards
+- **2022.11** Best Poster Award: Center for Identification Technology Research ([CITer](https://citer.clarkson.edu/)) workshop, MI, USA, 2022
+- **2009-2012** University Merit Scholarship: Govt. of the People’s Republic of Bangladesh
