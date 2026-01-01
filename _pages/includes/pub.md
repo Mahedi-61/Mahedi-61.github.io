@@ -1,6 +1,6 @@
 # 📝 Publications 
-# 📚 Vision-Language Modeling
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">BMVC 2025</div><img src='images/bmvc_2025.png' alt="sym" width="80%"></div></div>
+## 📚 Vision-Language Modeling
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">BMVC 2025</div><img src='images/bmvc_2025.png' alt="sym" width="74%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 FaceCPT: Toward Cross-Modal Facial Representation Learning with Face-Caption Pre-Training \\
@@ -86,48 +86,48 @@ We introduce caption-guided face recognition (CGFR) as a new framework to improv
 - `IET Computer Vision 2021` Learning view-invariant features using stacked autoencoder for skeleton-based gait recognition, **Md Mahedi Hasan**, and Hossen Asiful Mustafa. [\[HTML\]](https://doi.org/10.1049/cvi2.12050) [\[PDF\]](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/cvi2.12050) [![](https://img.shields.io/github/stars/Mahedi-61/temporal_network?style=social&label=Code+Stars)](https://github.com/Mahedi-61/temporal_network)
 - `IJCSIS 2021` Multi-level feature fusion for robust pose-based gait recognition using RNN, **Md Mahedi Hasan**, and Hossen Asiful Mustafa. [\[PDF\]](https://www.academia.edu/download/61987403/03_Paper_01012007_IJCSIS_Camera_Ready_pp20-3120200204-65998-gq509w.pdf)
 
-## Others
+## 📚 Others
 - ``Book Chapter 2020`` [Deep Learning based Early Detection and Grading of Diabetic Retinopathy Using Retinal Fundus Images](http://dx.doi.org/10.1201/9781003031352-6), Sheikh Muhammad Saiful Islam, **Md Mahedi Hasan**, Sohaib Abdullah <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:R3hNpaxXUhUC'></span></strong> [arXiv](https://arxiv.org/abs/1812.10595)
 - `RAAICON 2019` [Robust Pose-Based Human Fall Detection using Recurrent Neural Network](https://doi.org/10.1109/RAAICON48939.2019.23), **Md Mahedi Hasan**, Md Shamimul Islam, Sohaib Abdullah <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:maZDTaKrznsC'></span></strong> 
 - `ICBSLP 2018` [YOLO-Based Three-Stage Network for Bangla License Plate Recognition in Dhaka Metropolitan City](https://doi.org/10.1109/ICBSLP.2018.8554668), Sohaib Abdullah, **Md Mahedi Hasan**, Sheikh Muhammad Saiful Islam <span class='show_paper_citations' data='m3MlVBUAAAAJ:HDshCWvjkbEC'></span> [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition), [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset)
 
 
 # 📝 Research Projects
-## Optimizing Foundation Models for Edge Computing Platforms (2025.08 - 2028.08)
+### Optimizing Foundation Models for Edge Computing Platforms (2025.08 - 2028.08)
 -   Name of Funding Organization: Qualcomm
--   <p align="justify">Contribution:
+-   <p align="justify">Contribution: </p>
     - Designed a Conv-LoRA–based domain adaptation technique to fine-tune the Segment Anything Model (SAM), for defect segmentation, reducing training cost by 40% and enabling edge-device deployment.
     - Developing self-supervised techniques to optimize foundation models for tasks with limited manually annotated data.
-</p>
 
-## Super-Resolution Object Characterization in Low Earth Orbit (2023.08 - 2025.05)
+
+### Super-Resolution Object Characterization in Low Earth Orbit (2023.08 - 2025.05)
 -   Name of Funding Organization: Department of Defense (DoD)(USAF, \#FA8649-23-P-0408)
--   <p align="justify">Contribution:
+-   <p align="justify">Contribution: </p>
     - Designed an SRGAN-based super-resolution framework for diverse target chips detected and cropped by the Innovative Target Chipping (ITC) module, enhancing real-time detection of space objects.
     - Developed an adapted Multi-Scale SRGAN module to perform super-resolution with up-scaling factors of 4 and 8, improving the fidelity of satellite image patches for downstream analysis.
-</p>
 
-## A Perpetual Deep Face Recognition System (2022.09 - 2023.10)
+
+### A Perpetual Deep Face Recognition System (2022.09 - 2023.10)
 -   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#22F-01W)
--   <p align="justify">Contribution: 
+-   <p align="justify">Contribution: </p>
     - Designed and implemented the complete research pipeline, including data preprocessing, model development, training, and evaluation.
-    - Built a class-incremental continual learning framework, CLFace, for face recognition that enables consistent performance improvement across sequential tasks, and mitigates catastrophic forgetting</p>
+    - Built a class-incremental continual learning framework, CLFace, for face recognition that enables consistent performance improvement across sequential tasks, and mitigates catastrophic forgetting.
     
-## One-to-One Face Recognition with Human Examiner in the Loop (2022.05 - 2023.04)
+### One-to-One Face Recognition with Human Examiner in the Loop (2022.05 - 2023.04)
 -   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#22S-06W)
--   <p align="justify">Contribution:
+-   <p align="justify">Contribution: </p>
     - Developed CaptionFace, a text-guided face recognition framework that enhances state-of-the-art face recognition models by integrating facial attribute information through natural language descriptions.
-    - Proposed GPTFace, a vision–language captioning model that combines ViT-B/16 and GPT-2 to generate semantic descriptions from low-resolution facial images, achieving a 7% improvement in zero-shot retrieval performance.</p>
+    - Proposed GPTFace, a vision–language captioning model that combines ViT-B/16 and GPT-2 to generate semantic descriptions from low-resolution facial images, achieving a 7% improvement in zero-shot retrieval performance.
 
-## 2023 Incomplete Fingerprint Records and Matching (2023.08, 2024.08)
+### 2023 Incomplete Fingerprint Records and Matching (2023.08, 2024.08)
 -   Name of Funding Organization: Federal Bureau of Investigation (FBI)
--   <p align="justify">Contribution: 
-    - Conducted multi-finger fusion across all ten fingers using commercially off-the-shelf fingerprint matchers and performed comprehensive performance analysis.</p>
+-   <p align="justify">Contribution: </p>
+    - Conducted multi-finger fusion across all ten fingers using commercially off-the-shelf fingerprint matchers and performed comprehensive performance analysis.
 
-## Evaluation of the Performance of Multi-Finger Contactless Fingerprint Matching (2021.08, 2022.08)
+### Evaluation of the Performance of Multi-Finger Contactless Fingerprint Matching (2021.08, 2022.08)
 -   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#21S-04W)
--   <p align="justify">Contribution: 
-    - Developed a Coupled-GAN–based framework to improve multi-finger contactless fingerprint matching and enhance contact-to-contactless fingerprint interoperability, achieving an 11.68% improvement in TAR at FAR = 0.01% over prior state-of-the-art methods.</p>
+-   <p align="justify">Contribution: </p>
+    - Developed a Coupled-GAN–based framework to improve multi-finger contactless fingerprint matching and enhance contact-to-contactless fingerprint interoperability, achieving an 11.68% improvement in TAR at FAR = 0.01% over prior state-of-the-art methods.
 
 # 📝 Datasets
 ### Real-time Automatic Bangla License Plate Recognition Datasets (2018.05 - 2019.04)

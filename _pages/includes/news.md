@@ -6,7 +6,7 @@
 - *2023.12*: 🎉 One journal published at IEEE Transactions on Aerospace and Electronic Systems (**TAES**).
 - *2023.10*: 🎉 One paper published at **WACV 2024**.
 - *2023.06*: 🎉 One paper published at **IJCB 2023**.
-- *2023.04*: Attended [EAB and CITeR Biometrics Workshop](https://eab.org/events/program/312?ts=1674459113551) in Martigny, Switzerland, organized by European Association for Biometrics ([EAB](https://eab.org/)) in collaboration with the Center for Identification Technology Research ([CITeR](https://citer.clarkson.edu/)) and [IDIAP](https://www.idiap.ch/en) research institute to present two progress report and one final project report.
+- *2023.04*: Attended [EAB and CITeR Biometrics Workshop](https://eab.org/events/program/312?ts=1674459113551) in Martigny, Switzerland, organized by European Association for Biometrics ([EAB](https://eab.org/)) in collaboration with the Center for Identification Technology Research ([CITeR](https://citer.clarkson.edu/)) and [IDIAP](https://www.idiap.ch/en) research institute.
 - *2023.01*: 🎉 One journal published at **IET Biometrics** journal.
 - *2022.11* I received the best poster award in [CITer](https://citer.clarkson.edu/) Fall Program Review
 - *2021.06*: 🔥 I joined the Deep Learning Lab at WVU to work under [Prof. Nasser Nasrabadi](https://ep.jhu.edu/faculty/nasser-nasrabadi/) as a PhD researcher!

@@ -1,4 +1,4 @@
-# 💬 Reviewing
+# 📖 Reviewing
 - Conferences: Reviewer at CVPR 25, AAAI 26, WACV 24,25, BMVC 25, IJCB 23
 - IEEE Transactions: Reviewer at TPAMI 25, TIP 25, TIFS 25, TASE 24, 25, TCSVT 24, 25, TPD 24
 - Others: Reviewer at **Pattern recognition**, **Engineering Applications of Artificial Intelligence**
@@ -17,10 +17,8 @@
 
 
 # 💬 Affiliations
-### *2015.03 - 2021.05*
-- Assistant Editor of [Byapon Science Magazine](https://www.byapon.com/), Office: 48/1, Motijheel C/A, Dhaka-1200, Bangladesh 
-### *2023.07 - Present*
-- [IEEE](https://www.ieee.org/) Student Member
+- **2015.03 - 2021.05** Assistant Editor of [Byapon Science Magazine](https://www.byapon.com/), Office: 48/1, Motijheel C/A, Dhaka-1200, Bangladesh 
+- **2023.07 - Present** [IEEE](https://www.ieee.org/) Student Member
 
 
 # 💬 Invited Talks

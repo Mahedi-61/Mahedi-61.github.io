@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Md Mahedi Hasan"
-description              : "PhD Researcher at West Virginia University."
+description              : "7+ years of experience in machine learning and computer vision,"
 repository               : "Mahedi-61/Mahedi-61.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -19,7 +19,7 @@ google_analytics_id      :  # get google_analytics_id from https://analytics.goo
 author:
   name             : "Md Mahedi Hasan"
   avatar           : "images/mahedi_profile.jpeg"
-  bio              : "Deep Learning Lab, WVU"
+  bio              : "PhD Researcher at West Virginia University"
   location         : "Morgantown, WV, USA"
   employer         :
   pubmed           : 
