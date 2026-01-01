@@ -5,7 +5,7 @@
 
 FaceCPT: Toward Cross-Modal Facial Representation Learning with Face-Caption Pre-Training \\
 36th British Machine Vision Conference (BMVC) 2025\\
-**Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[PDF\]](https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_898/paper.pdf) [\[CODE\]](https://github.com/Mahedi-61/CaptionFace)
+**Md Mahedi Hasan**, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson [\[PDF\]](https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_898/paper.pdf) [\[CODE\]](https://github.com/Mahedi-61/FaceCPT)
 <details>
 <summary>Abstract</summary>
 Facial representation learning (FRL) through weakly-supervised pre-training has shown significant promise across various downstream tasks, highlighting its improved generalizability. However, most existing FRL models excel only in face generation and analysis, and there is a lack of models that address cross-modal tasks. To fill this gap, we pose the following question: Can we learn a universal facial representation by pre-training on web-sourced face-caption pairs for surveillance-related tasks? These tasks include both cross-modal understanding, such as face captioning and text-based face image retrieval, as well as face analysis tasks like face, attribute, expression recognition, and age estimation. In this paper, we take a step toward this objective by introducing FaceCPT, a new framework for learning facial representation using Face Caption Pre-Training. However, domain misalignment and information asymmetry between image-text pairs challenge the model’s ability to achieve a meaningful interaction. To overcome this, we utilize contrastive learning along with a semantic attribute-aware loss (SAAL) to improve the semantic associations between face-caption pairs and encourage the model to focus on key semantic attributes, respectively. Experiments show that FaceCPT outperforms existing vision-language pre-training and FRL baselines, achieving state-of-the-art results in task-specific fine-tuning and improved zero-shot transferability across both single-modal and cross-modal tasks, even with low-resolution inputs.
@@ -89,55 +89,56 @@ We introduce caption-guided face recognition (CGFR) as a new framework to improv
 ## 📚 Others
 - ``Book Chapter 2020`` [Deep Learning based Early Detection and Grading of Diabetic Retinopathy Using Retinal Fundus Images](http://dx.doi.org/10.1201/9781003031352-6), Sheikh Muhammad Saiful Islam, **Md Mahedi Hasan**, Sohaib Abdullah <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:R3hNpaxXUhUC'></span></strong> [arXiv](https://arxiv.org/abs/1812.10595)
 - `RAAICON 2019` [Robust Pose-Based Human Fall Detection using Recurrent Neural Network](https://doi.org/10.1109/RAAICON48939.2019.23), **Md Mahedi Hasan**, Md Shamimul Islam, Sohaib Abdullah <strong><span class='show_paper_citations' data='m3MlVBUAAAAJ:maZDTaKrznsC'></span></strong> 
-- `ICBSLP 2018` [YOLO-Based Three-Stage Network for Bangla License Plate Recognition in Dhaka Metropolitan City](https://doi.org/10.1109/ICBSLP.2018.8554668), Sohaib Abdullah, **Md Mahedi Hasan**, Sheikh Muhammad Saiful Islam <span class='show_paper_citations' data='m3MlVBUAAAAJ:HDshCWvjkbEC'></span> [\[code\]](https://github.com/Mahedi-61/Text_Guided_Face_Recognition), [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset)
+- `ICBSLP 2018` [YOLO-Based Three-Stage Network for Bangla License Plate Recognition in Dhaka Metropolitan City](https://doi.org/10.1109/ICBSLP.2018.8554668), Sohaib Abdullah, **Md Mahedi Hasan**, Sheikh Muhammad Saiful Islam <span class="show_paper_citations" data-paper='m3MlVBUAAAAJ:HDshCWvjkbEC'></span>, [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset)
 
 
 # 📝 Research Projects
-### Optimizing Foundation Models for Edge Computing Platforms (2025.08 - 2028.08)
--   Name of Funding Organization: Qualcomm
--   <p align="justify">Contribution: </p>
-    - Designed a Conv-LoRA–based domain adaptation technique to fine-tune the Segment Anything Model (SAM), for defect segmentation, reducing training cost by 40% and enabling edge-device deployment.
-    - Developing self-supervised techniques to optimize foundation models for tasks with limited manually annotated data.
+- ### Optimizing Foundation Models for Edge Computing Platforms (2025.08 - 2028.08)
+    -   Name of Funding Organization: Qualcomm
+    -   <p align="justify">Contribution: </p>
+        - Designed a Conv-LoRA–based domain adaptation technique to fine-tune the Segment Anything Model (SAM), for defect segmentation, reducing training cost by 40% and enabling edge-device deployment.
+        - Developing self-supervised techniques to optimize foundation models for tasks with limited manually annotated data.
 
 
-### Super-Resolution Object Characterization in Low Earth Orbit (2023.08 - 2025.05)
--   Name of Funding Organization: Department of Defense (DoD)(USAF, \#FA8649-23-P-0408)
--   <p align="justify">Contribution: </p>
-    - Designed an SRGAN-based super-resolution framework for diverse target chips detected and cropped by the Innovative Target Chipping (ITC) module, enhancing real-time detection of space objects.
-    - Developed an adapted Multi-Scale SRGAN module to perform super-resolution with up-scaling factors of 4 and 8, improving the fidelity of satellite image patches for downstream analysis.
+- ### Super-Resolution Object Characterization in Low Earth Orbit (2023.08 - 2025.05)
+    -   Name of Funding Organization: Department of Defense (DoD)(USAF, \#FA8649-23-P-0408)
+    -   <p align="justify">Contribution: </p>
+        - Designed an SRGAN-based super-resolution framework for diverse target chips detected and cropped by the Innovative Target Chipping (ITC) module, enhancing real-time detection of space objects.
+        - Developed an adapted Multi-Scale SRGAN module to perform super-resolution with up-scaling factors of 4 and 8, improving the fidelity of satellite image patches for downstream analysis.
 
 
-### A Perpetual Deep Face Recognition System (2022.09 - 2023.10)
--   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#22F-01W)
--   <p align="justify">Contribution: </p>
-    - Designed and implemented the complete research pipeline, including data preprocessing, model development, training, and evaluation.
-    - Built a class-incremental continual learning framework, CLFace, for face recognition that enables consistent performance improvement across sequential tasks, and mitigates catastrophic forgetting.
+- ### A Perpetual Deep Face Recognition System (2022.09 - 2023.10)
+    -   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#22F-01W)
+    -   <p align="justify">Contribution: </p>
+        - Designed and implemented the complete research pipeline, including data preprocessing, model development, training, and evaluation.
+        - Built a class-incremental continual learning framework, CLFace, for face recognition that enables consistent performance improvement across sequential tasks, and mitigates catastrophic forgetting.
     
-### One-to-One Face Recognition with Human Examiner in the Loop (2022.05 - 2023.04)
--   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#22S-06W)
--   <p align="justify">Contribution: </p>
-    - Developed CaptionFace, a text-guided face recognition framework that enhances state-of-the-art face recognition models by integrating facial attribute information through natural language descriptions.
-    - Proposed GPTFace, a vision–language captioning model that combines ViT-B/16 and GPT-2 to generate semantic descriptions from low-resolution facial images, achieving a 7% improvement in zero-shot retrieval performance.
+- ### One-to-One Face Recognition with Human Examiner in the Loop (2022.05 - 2023.04)
+    -   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#22S-06W)
+    -   <p align="justify">Contribution: </p>
+        - Developed CaptionFace, a text-guided face recognition framework that enhances state-of-the-art face recognition models by integrating facial attribute information through natural language descriptions.
+        - Proposed GPTFace, a vision–language captioning model that combines ViT-B/16 and GPT-2 to generate semantic descriptions from low-resolution facial images, achieving a 7% improvement in zero-shot retrieval performance.
 
-### 2023 Incomplete Fingerprint Records and Matching (2023.08, 2024.08)
--   Name of Funding Organization: Federal Bureau of Investigation (FBI)
--   <p align="justify">Contribution: </p>
-    - Conducted multi-finger fusion across all ten fingers using commercially off-the-shelf fingerprint matchers and performed comprehensive performance analysis.
+- ### 2023 Incomplete Fingerprint Records and Matching (2023.08, 2024.08)
+    -   Name of Funding Organization: Federal Bureau of Investigation (FBI)
+    -   <p align="justify">Contribution: </p>
+        - Conducted multi-finger fusion across all ten fingers using commercially off-the-shelf fingerprint matchers and performed comprehensive performance analysis.
 
-### Evaluation of the Performance of Multi-Finger Contactless Fingerprint Matching (2021.08, 2022.08)
--   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#21S-04W)
--   <p align="justify">Contribution: </p>
-    - Developed a Coupled-GAN–based framework to improve multi-finger contactless fingerprint matching and enhance contact-to-contactless fingerprint interoperability, achieving an 11.68% improvement in TAR at FAR = 0.01% over prior state-of-the-art methods.
+- ### Evaluation of the Performance of Multi-Finger Contactless Fingerprint Matching (2021.08, 2022.08)
+    -   Name of Funding Organization: NSF ([CITer](https://citer.clarkson.edu/), \#21S-04W)
+    -   <p align="justify">Contribution: </p>
+        - Developed a Coupled-GAN–based framework to improve multi-finger contactless fingerprint matching and enhance contact-to-contactless fingerprint interoperability, achieving an 11.68% improvement in TAR at FAR = 0.01% over prior state-of-the-art methods.
+
 
 # 📝 Datasets
-### Real-time Automatic Bangla License Plate Recognition Datasets (2018.05 - 2019.04)
--  Description: We have developed a real-time automatic Bangla license plate recognition system based on YOLO-v3. Additionally, we curated a dataset comprising 1,500 diverse images of Bangladeshi vehicular license plates. These images were manually captured from streets, simulating various real-world scenarios. This project is funded by department of CSE, Manarat International University ([MIU](https://manarat.ac.bd/)).
--  Resources: [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset), [\[report\]](https://doi.org/10.1109/ICBSLP.2018.8554668) 
+- ### Real-time Automatic Bangla License Plate Recognition Datasets (2018.05 - 2019.04)
+    -  Description: We have developed a real-time automatic Bangla license plate recognition system based on YOLO-v3. Additionally, we curated a dataset comprising 1,500 diverse images of Bangladeshi vehicular license plates. These images were manually captured from streets, simulating various real-world scenarios. This project is funded by department of CSE, Manarat International University ([MIU](https://manarat.ac.bd/)).
+    -  Resources: [\[dataset\]](https://github.com/Mahedi-61/Bangla_License_Plate_Dataset), [\[report\]](https://doi.org/10.1109/ICBSLP.2018.8554668) 
 
-### Deep Isolated Bangla Handwritten Basic and Compound Character Recognition Datasets (2018.01 - 2018.12)
--  Description: We present AIBangla, a new benchmark image database for isolated handwritten Bangla characters with detailed usage and a performance baseline. Our dataset contains 80,403 hand-written images on 50 Bangla basic characters and 249,911 hand-written images on 171 Bangla compound characters which were written by more than 2,000 unique writers from various institutes across Bangladesh. This project is funded by department of CSE, Manarat International University ([MIU](https://manarat.ac.bd/))
--  Resources: [\[dataset\]](https://doi.org/10.17632/hf2tt9kxkn.1), [\[report\]](https://doi.org/10.1109/ICBSLP47725.2019.201481) 
+- ### Deep Isolated Bangla Handwritten Basic and Compound Character Recognition Datasets (2018.01 - 2018.12)
+    -  Description: We present AIBangla, a new benchmark image database for isolated handwritten Bangla characters with detailed usage and a performance baseline. Our dataset contains 80,403 hand-written images on 50 Bangla basic characters and 249,911 hand-written images on 171 Bangla compound characters which were written by more than 2,000 unique writers from various institutes across Bangladesh. This project is funded by department of CSE, Manarat International University ([MIU](https://manarat.ac.bd/))
+    -  Resources: [\[dataset\]](https://doi.org/10.17632/hf2tt9kxkn.1), [\[report\]](https://doi.org/10.1109/ICBSLP47725.2019.201481) 
 
-### Deep Bangla Sign Language Recognition from Video: A New Large-scale Dataset (2020.05 - 2022.05)
-- Description: We have developed an attention-based Bi-GRU model that captures the temporal dynamics of pose information used by individuals communicating through sign language. Furthermore, we created a large-scale dataset called the MVBSL-W50, which comprises 50 isolated words across 13 categories. 
-- Resources: [\[dataset\]](https://github.com/Mahedi-61/MV-BSDL), [\[report\]](https://arxiv.org/abs/2302.11559)
+- ### Deep Bangla Sign Language Recognition from Video: A New Large-scale Dataset (2020.05 - 2022.05)
+    - Description: We have developed an attention-based Bi-GRU model that captures the temporal dynamics of pose information used by individuals communicating through sign language. Furthermore, we created a large-scale dataset called the MVBSL-W50, which comprises 50 isolated words across 13 categories. 
+    - Resources: [\[dataset\]](https://github.com/Mahedi-61/MV-BSDL), [\[report\]](https://arxiv.org/abs/2302.11559)
