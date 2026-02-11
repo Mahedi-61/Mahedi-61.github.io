@@ -32,9 +32,9 @@
 - B.Sc. in Electrical and Electronic Engineering, Khulna University of Engineering and Technology ([KUET](https://kuet.ac.bd/))
 
 # 💻 Research Experiences
-- **Research Collaboration**, O Analytics | October, 2023 - Present
-- **Graduate Researcher**, West Virginia University ([WVU](https://www.wvu.edu)) | June 2021 - Present
-- **Faculty Member**, Manarat International University ([MIU](https://manarat.ac.bd/)), Dept. of CSE | May 2019 - June 2021
-- **Computer Vision Researcher**, Bangladesh University of Engineering and Technology (BUET) | March 2019 - June 2020
-- **Deep Learning Engineer**, AIBangla, Dhaka, Bangladesh | January 2018 - February 2019
-- **Adjunct Faculty Member**, Manarat International University (MIU), Dept. of CSE | October 2016 - April 2019
+- **Research Collaboration**: O Analytics | October, 2023 - Present
+- **Graduate Researcher**: West Virginia University ([WVU](https://www.wvu.edu)) | June 2021 - Present
+- **Faculty Member**: Manarat International University ([MIU](https://manarat.ac.bd/)), Dept. of CSE | May 2019 - June 2021
+- **Computer Vision Researcher**: Bangladesh University of Engineering and Technology (BUET) | March 2019 - June 2020
+- **Deep Learning Engineer**: AIBangla, Dhaka, Bangladesh | January 2018 - February 2019
+- **Adjunct Faculty Member**: Manarat International University (MIU), Dept. of CSE | October 2016 - April 2019
