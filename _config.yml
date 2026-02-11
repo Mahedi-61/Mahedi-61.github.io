@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Md Mahedi Hasan"
-description              : "7+ years of experience in machine learning and computer vision,"
+description              : "7+ years of experience in ML/CV"
 repository               : "Mahedi-61/Mahedi-61.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -19,7 +19,7 @@ google_analytics_id      :  # get google_analytics_id from https://analytics.goo
 author:
   name             : "Md Mahedi Hasan"
   avatar           : "images/mahedi_profile_insh.jpeg"
-  bio              : "PhD Researcher at West Virginia University"
+  bio              : "PhD Researcher in CV/ML & Multimodal AI | VLMs, MLLMs"
   location         : "Morgantown, WV, USA"
   employer         :
   pubmed           : 

@@ -1,6 +1,3 @@
 I am a Doctoral Researcher with over seven years of experience in machine learning and computer vision, specializing in the pre-training and fine-tuning of Vision–Language Models (VLMs) and Multimodal Large Language Models (MLLMs) for fine-grained visual understanding. My research focuses on developing efficient multimodal representation learning frameworks that perform reliably under domain shift, limited labeled data, noisy inputs, and compute constraints. I have contributed to industry- and government-funded projects supported by the Department of Defense (DoD), FBI, Qualcomm, and the National Science Foundation (NSF), and have published in leading venues including WACV, BMVC, TAES, and TBIOM. My broader research interests include multimodal representation learning, foundation models, continual learning, and weakly- and self-supervised fine-tuning.
 
-<span style="color:blue">As I approach the final year of my Ph.D. in 2025, I am actively seeking opportunities for research internships positions.</span>.
-
- \\
-If you have any questions of my work, please feel free to email me at [mh00062@mix.wvu.edu](mailto:mh00062@mix.wvu.edu).
+<span style="color:blue">As I near the completion of my Ph.D., I am actively seeking opportunities for postdoctoral research and research scientist positions.</span>.

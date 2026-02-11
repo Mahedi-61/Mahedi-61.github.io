@@ -6,9 +6,9 @@
 - *2023.12*: 🎉 One journal published at IEEE Transactions on Aerospace and Electronic Systems (**TAES**).
 - *2023.10*: 🎉 One paper published at **WACV 2024**.
 - *2023.06*: 🎉 One paper published at **IJCB 2023**.
-- *2023.04*: Attended [EAB and CITeR Biometrics Workshop](https://eab.org/events/program/312?ts=1674459113551) in Martigny, Switzerland, organized by European Association for Biometrics ([EAB](https://eab.org/)) in collaboration with the Center for Identification Technology Research ([CITeR](https://citer.clarkson.edu/)) and [IDIAP](https://www.idiap.ch/en) research institute.
+- *2023.04*: 🔥 Attended [EAB and CITeR Biometrics Workshop](https://eab.org/events/program/312?ts=1674459113551) in Martigny, Switzerland, organized by European Association for Biometrics ([EAB](https://eab.org/)).
 - *2023.01*: 🎉 One journal published at **IET Biometrics** journal.
-- *2022.11* I received the best poster award in [CITer](https://citer.clarkson.edu/) Fall Program Review
+- *2022.11* 🔥 I received the best poster award in [CITer](https://citer.clarkson.edu/) Fall Program Review
 - *2021.06*: 🔥 I joined the Deep Learning Lab at WVU to work under [Prof. Nasser Nasrabadi](https://ep.jhu.edu/faculty/nasser-nasrabadi/) as a PhD researcher!
 - *2021.04*: 🎉 One journal published at **IET Computer Vision**.
 - *2020.09*: 🔥 I defended my M.Sc. thesis at [IICT, BUET](https://iict.buet.ac.bd/). Thanks to [Dr. Hossen Asiful Mustafa](https://iict.buet.ac.bd/?page_id=54) for your invaluable supervision.
@@ -26,7 +26,10 @@
 ### *2008.12 - 2013.09* 
 - B.Sc. in Electrical and Electronic Engineering, Khulna University of Engineering and Technology ([KUET](https://kuet.ac.bd/))
 
-# 💻 Professional Experience
-- *2021.06 - *, Graduate Researcher at West Virginia University ([WVU](https://www.wvu.edu)) 
-- *2019.04 - 2021.05*, Teaching Faculty at Manarat International University ([MIU](https://manarat.ac.bd/)), Department of Computer Science and Engineering (CSE)
-- *2018.01 - 2019.02*, Deep Learning Engineer at AIBangla, Dhaka, Bangladesh
+# 💻 Research Experiences
+- *Research Collaboration*, O Analytics | October, 2023 - Present
+- *Graduate Researcher*, West Virginia University ([WVU](https://www.wvu.edu)) | June 2021 - Present
+- *Faculty Member*, Manarat International University ([MIU](https://manarat.ac.bd/)), Dept. of CSE | May 2019 - June 2021
+- *Computer Vision Researcher*, Bangladesh University of Engineering and Technology (BUET), IICT | March 2019 - June 2020
+- *Deep Learning Engineer*, AIBangla, Dhaka, Bangladesh | January 2018 - February 2019
+- *Adjunct Faculty Member*, Manarat International University (MIU), Dept. of CSE | October 2016 - April 2019
