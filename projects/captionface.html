@@ -1,0 +1,776 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CaptionFace · Md Mahedi Hasan</title>
+<meta name="author" content="Md Mahedi Hasan">
+<meta name="description" content="CaptionFace: Learning Multi-Scale Knowledge-Guided Features for Text-Guided Face Recognition. IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM), 2025.">
+<meta property="og:title" content="CaptionFace · IEEE TBIOM 2025">
+<meta property="og:description" content="Text-guided face recognition using multi-scale knowledge-guided features. IEEE Transactions on Biometrics, Behavior, and Identity Science, 2025.">
+<meta property="og:image" content="assets/captionface_framework.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  /* ---------------------------------------------------------------
+     Matches the visual system of mahedi-61.github.io (al-folio theme):
+     system font stack, white background, near-black text, a single
+     theme-color accent, and Bootstrap's container/grid widths.
+     Change --global-theme-color below to match your site exactly if
+     you've customized al-folio's default purple.
+  ----------------------------------------------------------------*/
+  :root{
+    --global-bg-color:#ffffff;
+    --global-code-bg-color:#f5f5f5;
+    --global-text-color:#212529;
+    --global-text-color-light:#6c757d;
+    --global-theme-color:#9c2780;      /* al-folio default purple accent */
+    --global-hover-color:#9c2780;
+    --global-divider-color:#dee2e6;
+    --global-card-bg-color:#f8f9fa;
+    --container-max:1140px;            /* Bootstrap .container max-width at xl */
+    --prose-max:900px;                 /* comfortable reading width for body copy */
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    margin:0;
+    background:var(--global-bg-color);
+    color:var(--global-text-color);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size:1rem;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{
+    color:var(--global-theme-color);
+    text-decoration:none;
+  }
+  a:hover{ text-decoration:underline; }
+
+  .container{
+    max-width:var(--container-max);
+    margin:0 auto;
+    padding:0 15px;
+  }
+
+  .prose{
+    max-width:var(--prose-max);
+    margin:0 auto;
+  }
+
+  /* ---------- navbar ---------- */
+  .navbar{
+    border-bottom:1px solid var(--global-divider-color);
+    background:var(--global-bg-color);
+    padding:14px 0;
+  }
+  .navbar .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .navbar-brand{
+    font-weight:600;
+    font-size:1.05rem;
+    color:var(--global-text-color);
+  }
+  .navbar-brand:hover{ text-decoration:none; color:var(--global-theme-color); }
+  .navbar-links{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    font-size:0.92rem;
+  }
+  .navbar-links a{ color:var(--global-text-color); }
+  .navbar-links a:hover{ color:var(--global-theme-color); text-decoration:none; }
+
+  /* ---------- header / title block ---------- */
+  .pub-header{
+    padding:48px 0 28px;
+    border-bottom:1px solid var(--global-divider-color);
+  }
+  .venue-badge{
+    display:inline-block;
+    font-size:0.8rem;
+    font-weight:600;
+    letter-spacing:0.02em;
+    color:var(--global-theme-color);
+    border:1px solid var(--global-theme-color);
+    border-radius:3px;
+    padding:3px 10px;
+    margin-bottom:16px;
+  }
+  h1.pub-title{
+    font-size:1.85rem;
+    font-weight:600;
+    line-height:1.32;
+    margin:0 0 14px;
+    color:var(--global-text-color);
+  }
+  .pub-venue-line{
+    font-size:1rem;
+    color:var(--global-text-color-light);
+    margin-bottom:10px;
+  }
+  .pub-authors{
+    font-size:1rem;
+    margin-bottom:4px;
+  }
+  .pub-authors .me{ font-weight:600; }
+  .pub-affil{
+    font-size:0.92rem;
+    color:var(--global-text-color-light);
+    margin-bottom:20px;
+  }
+
+  /* link badges, matching the [HTML] [PDF] [CODE] style already used on the site */
+  .pub-links{
+    margin-top:6px;
+  }
+  .pub-links a.btn-link{
+    display:inline-block;
+    font-size:0.88rem;
+    color:var(--global-text-color);
+    border:1px solid var(--global-text-color);
+    border-radius:3px;
+    padding:3px 12px;
+    margin:0 6px 6px 0;
+    transition:color 0.15s, border-color 0.15s;
+  }
+  .pub-links a.btn-link:hover{
+    color:var(--global-theme-color);
+    border-color:var(--global-theme-color);
+    text-decoration:none;
+  }
+
+  /* ---------- sections ---------- */
+  section{
+    padding:36px 0;
+    border-bottom:1px solid var(--global-divider-color);
+  }
+  section:last-of-type{ border-bottom:none; }
+
+  h2{
+    font-size:1.4rem;
+    font-weight:600;
+    margin:0 0 18px;
+    color:var(--global-text-color);
+  }
+
+  p{ margin:0 0 16px; }
+
+  figure{ margin:24px 0; text-align:center; }
+  figure img{
+    max-width:100%;
+    height:auto;
+    border:1px solid var(--global-divider-color);
+    border-radius:4px;
+  }
+  figcaption.caption{
+    font-size:0.875rem;
+    color:var(--global-text-color-light);
+    margin-top:12px;
+    text-align:left;
+  }
+
+  /* placeholder box for figures not yet dropped into assets/ */
+  .fig-placeholder{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    min-height:160px;
+    border:1px dashed var(--global-divider-color);
+    border-radius:4px;
+    background:var(--global-card-bg-color);
+    padding:28px 16px;
+  }
+  .fig-placeholder .fig-num{
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    color:var(--global-theme-color);
+  }
+  .fig-placeholder .fig-file{
+    font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size:0.8rem;
+    color:var(--global-text-color-light);
+  }
+
+  /* component list */
+  .components{
+    list-style:none;
+    counter-reset:comp;
+    padding:0;
+    margin:22px 0;
+  }
+  .components li{
+    counter-increment:comp;
+    position:relative;
+    padding:14px 0 14px 38px;
+    border-bottom:1px solid var(--global-divider-color);
+  }
+  .components li:last-child{ border-bottom:none; }
+  .components li::before{
+    content:counter(comp);
+    position:absolute;
+    left:0;
+    top:14px;
+    width:24px;
+    height:24px;
+    font-size:0.78rem;
+    font-weight:600;
+    color:#fff;
+    background:var(--global-theme-color);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .components h3{
+    font-size:1rem;
+    font-weight:600;
+    margin:0 0 6px;
+    color:var(--global-text-color);
+  }
+  .components p{
+    margin:0;
+    font-size:0.94rem;
+    color:var(--global-text-color-light);
+  }
+
+  /* highlights */
+  ul.highlights{
+    margin:0;
+    padding-left:1.2rem;
+  }
+  ul.highlights li{
+    margin-bottom:8px;
+    font-size:0.97rem;
+  }
+
+  /* tables */
+  .table-scroll{ overflow-x:auto; margin:18px 0; }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:0.86rem;
+  }
+  th, td{
+    text-align:left;
+    padding:8px 12px;
+    border-bottom:1px solid var(--global-divider-color);
+    white-space:nowrap;
+    vertical-align:middle;
+  }
+  th{
+    font-weight:600;
+    font-size:0.78rem;
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+    color:var(--global-text-color-light);
+    border-bottom:2px solid var(--global-divider-color);
+  }
+  td.best{ color:var(--global-theme-color); font-weight:600; }
+  tr.ours td{ background:var(--global-card-bg-color); }
+  .table-note{
+    font-size:0.85rem;
+    color:var(--global-text-color-light);
+    margin-top:8px;
+  }
+
+  /* repo tree + code */
+  .repo-tree, pre.code{
+    background:#272822;
+    color:#f8f8f2;
+    border-radius:4px;
+    padding:16px 18px;
+    font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size:0.82rem;
+    line-height:1.65;
+    overflow-x:auto;
+    margin:18px 0;
+  }
+  .repo-tree .dim{ color:#9d9d8f; }
+  code{
+    font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background:var(--global-code-bg-color);
+    color:var(--global-theme-color);
+    padding:2px 5px;
+    border-radius:3px;
+    font-size:0.88em;
+  }
+  pre.code code{ background:none; color:inherit; padding:0; }
+
+
+  .bibtex{
+    background:var(--global-card-bg-color);
+    border:1px solid var(--global-divider-color);
+    border-radius:4px;
+    padding:18px 20px;
+    font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size:0.78rem;
+    line-height:1.6;
+    overflow-x:auto;
+    white-space:pre;
+  }
+  .copy-btn{
+    font-size:0.8rem;
+    border:1px solid var(--global-text-color-light);
+    background:none;
+    color:var(--global-text-color-light);
+    padding:4px 12px;
+    border-radius:3px;
+    cursor:pointer;
+    margin-bottom:10px;
+  }
+  .copy-btn:hover{ border-color:var(--global-theme-color); color:var(--global-theme-color); }
+
+  .related-list{ list-style:none; padding:0; margin:0; }
+  .related-list li{
+    padding:12px 0;
+    border-bottom:1px solid var(--global-divider-color);
+    font-size:0.95rem;
+  }
+  .related-list li:last-child{ border-bottom:none; }
+  .venue-tag{
+    font-size:0.72rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+    color:var(--global-text-color-light);
+  }
+
+  footer{
+    padding:32px 0 50px;
+    font-size:0.85rem;
+    color:var(--global-text-color-light);
+    text-align:center;
+  }
+  footer a{ color:var(--global-text-color-light); }
+  footer .back-top{ display:block; margin-top:12px; }
+
+  @media (max-width:600px){
+    h1.pub-title{ font-size:1.5rem; }
+    .navbar-links{ font-size:0.85rem; gap:14px; }
+  }
+
+  :focus-visible{ outline:2px solid var(--global-theme-color); outline-offset:2px; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Md Mahedi Hasan</a>
+    <div class="navbar-links">
+      <a href="#overview">Overview</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#gptface">GPTFace</a>
+      <a href="#results">Results</a>
+      <a href="#code">Code</a>
+      <a href="#citation">Citation</a>
+    </div>
+  </div>
+</nav>
+
+<header class="pub-header">
+  <div class="container prose">
+    <span class="venue-badge">IEEE TBIOM 2025</span>
+    <h1 class="pub-title">Learning Multi-Scale Knowledge-Guided Features for Text-Guided Face Recognition</h1>
+    <p class="pub-venue-line">IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM), Vol. 7, No. 2, pp. 195&ndash;209, April 2025</p>
+    <p class="pub-authors"><span class="me">Md Mahedi Hasan</span>, Shoaib Meraj Sami, Nasser Nasrabadi, and Jeremy Dawson</p>
+    <p class="pub-affil">Lane Department of Computer Science and Electrical Engineering, West Virginia University</p>
+
+    <div class="pub-links">
+      <a class="btn-link" href="https://doi.org/10.1109/TBIOM.2024.3466216">[HTML]</a>
+      <a class="btn-link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10689338">[PDF]</a>
+      <a class="btn-link" href="https://github.com/Mahedi-61/CaptionFace">[CODE]</a>
+      <a class="btn-link" href="#citation">[BIBTEX]</a>
+    </div>
+  </div>
+</header>
+
+<section id="overview">
+  <div class="container prose">
+    <h2>Abstract</h2>
+    <p>
+      Text-guided face recognition (TGFR) aims to improve the performance of state-of-the-art face recognition (FR) algorithms by incorporating auxiliary information, such as distinct facial marks and attributes, provided as natural language descriptions. Current TGFR algorithms have been proven to be highly effective in addressing performance drops in state-of-the-art FR models, particularly in scenarios involving sensor noise, low resolution, and turbulence effects. Although existing methods explore various algorithms using different cross-modal alignment and fusion techniques, they encounter practical limitations in real-world applications. For example, during inference, textual descriptions associated with face images may be missing, lacking crucial details, or incorrect. Furthermore, the presence of inherent modality heterogeneity poses a significant challenge in achieving effective cross-modal alignment. To address these challenges, we introduce CaptionFace, a TGFR framework that integrates GPTFace, a face image captioning model designed to generate context-rich natural language descriptions from low-resolution facial images. By leveraging GPTFace, we overcome the issue of missing textual descriptions, expanding the applicability of CaptionFace to single-modal FR datasets. Additionally, we introduce a multi-scale feature alignment (MSFA) module to ensure semantic alignment between face-caption pairs at different granularities. Furthermore, we introduce an attribute-aware loss and perform knowledge adaptation to specifically adapt textual knowledge from facial features. Extensive experiments on three face-caption datasets and various unconstrained single-modal benchmark datasets demonstrate that CaptionFace significantly outperforms state-of-the-art FR models and existing TGFR approaches.
+    </p>
+
+    <h2 style="margin-top:32px;">Overview</h2>
+    <p>
+      CaptionFace extends our earlier <a href="https://github.com/Mahedi-61/Text_Guided_Face_Recognition">WACV 2024 work, TGFR</a>, with a deeper alignment module, a knowledge-distillation mechanism between modalities, an attribute-aware objective, and an end-to-end captioning model that removes the framework's dependence on having a caption available at inference time. It is evaluated on three face-caption datasets (Multi-Modal CelebA-HQ, Face2Text, CelebA-Dialog), on single-modal benchmark FR datasets (LFW, CALFW, AgeDB-30) using captions generated on the fly, and on a fine-grained image classification benchmark (CUB-200-2011) to show the alignment module generalizes beyond faces.
+    </p>
+
+    <ul class="highlights">
+      <li>Removes TGFR's dependence on ground-truth captions at inference time, via GPTFace.</li>
+      <li>Local + global contrastive alignment (MSAM), instead of one coarse image&ndash;text contrastive loss.</li>
+      <li>Caption Knowledge Adaptation distills image-specific detail into text embeddings without polluting them with a direct identity loss.</li>
+      <li>An attribute-aware loss adds a modality-invariant, fine-grained supervisory signal on top of identity loss.</li>
+      <li>Consistently outperforms ArcFace, AdaFace, MagFace, and our own TGFR baseline across three face-caption datasets and three FR benchmarks.</li>
+      <li>GPTFace matches BLIP / BLIP-2 captioning quality at roughly one-third the input resolution and a fraction of the parameter count (177M vs. 446M / 1.1B).</li>
+    </ul>
+
+    <figure>
+      <img src="assets/face_caption_info.png" alt="Face-caption information" width="500">
+      <figcaption class="caption"><strong>Figure 2.</strong> Two subjects often share the same facial attributes, which degrades the discriminability of caption-specific features and prevents the model from learning discriminative multimodal features. Captions do not always cover every fine-grained attribute of a face, and may even contain inconsistent or incorrect attributes (e.g. "necklace"), further imbalancing the information in a face-caption pair and making cross-modal alignment harder.</figcaption>
+    
+    
+    </figure>
+  </div>
+</section>
+
+<section id="architecture">
+  <div class="container prose">
+    <h2>Architecture</h2>
+
+    <figure>
+      <img src="assets/captionface_framework.png" alt="CaptionFace framework: GPTFace captioning, BLIP caption encoder, projection network, Multi-Scale Alignment Module with local and global semantic alignment losses, shared identity classifier with Caption Knowledge Adaptation, attribute-aware losses, and Cross-Modal Fusion Module.">
+      <figcaption class="caption"><strong>Figure 3.</strong> Overview of the CaptionFace framework. It comprises an image captioning network, an image encoder, a text encoder, an alignment module, and a fusion module. The alignment module establishes cross-modal semantic associations using contrastive losses at both local and global scales while incorporating attribute information, helping the fusion module implement fine-grained visual-semantic interaction. A knowledge adaptation technique enriches the textual modality with image-specific information. The captioning network, GPTFace, uses facial images and associated captions during training; at inference it generates captions on the fly for single-modal face recognition datasets with no paired text.</figcaption>
+    </figure>
+
+    <p>Four components make up the framework:</p>
+
+    <ol class="components">
+      <li>
+        <h3>GPTFace</h3>
+        <p>A lightweight face-captioning model (frozen AdaFace image encoder + 12-block GPT-2 decoder) that generates a natural-language description directly from a low-resolution face image, so CaptionFace can be applied to single-modal FR datasets that have no associated text.</p>
+      </li>
+      <li>
+        <h3>Multi-Scale Alignment Module (MSAM)</h3>
+        <p>Aligns image and caption embeddings at both the global level (global semantic alignment loss) and the local, region-to-token level (local semantic alignment loss).</p>
+      </li>
+      <li>
+        <h3>Caption Knowledge Adaptation (CKA)</h3>
+        <p>A distillation mechanism that enriches the caption embedding with image-specific detail it might be missing, instead of forcing an identity loss directly onto noisy text features.</p>
+      </li>
+      <li>
+        <h3>Cross-Modal Fusion Module (CMFM)</h3>
+        <p>A transformer block with multi-head cross- and self-attention that fuses local image features with caption token embeddings for the final identity decision, trained with a focal loss.</p>
+      </li>
+    </ol>
+
+    <p style="font-size:0.94rem; color:var(--global-text-color-light);">
+      An attribute-aware loss is applied on both modalities using a 40-attribute vector extracted from the caption with TextBlob, adding a modality-invariant, fine-grained supervisory signal on top of the identity loss.
+    </p>
+
+    <figure>
+      <img src="assets/cmfm.png" alt="Cross-Modal Fusion Module (CMFM)" width="460">
+      <figcaption class="caption"><strong>Figure 4.</strong> Block diagram of the Cross-Modal Fusion Module (CMFM). A fusion transformer applies fine-grained interaction between local image features and caption token embeddings via multi-head cross-attention, followed by multi-head self-attention and a max-pooling and MLP head, trained with a focal loss.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="gptface">
+  <div class="container prose">
+    <h2>Face image captioning: GPTFace</h2>
+    <p>
+      GPTFace pairs a frozen AdaFace image encoder with a 12-block GPT-2 language decoder. Since GPT-2 has no native mechanism for consuming encoder features, a cross-attention scheme is incorporated into every GPT-2 block. A projection network combines local and global image features extracted by AdaFace, with a self-attention layer added to capture long-range fine-grained dependencies before passing the combined representation into GPT-2's cross-attention.
+    </p>
+
+    <figure>
+      <img src="assets/GPTFace.png" alt="GPTFace framework" width="550">
+      <figcaption class="caption"><strong>Figure 5.</strong> Summary of the GPTFace framework. A pre-trained AdaFace encoder pairs with a GPT-2 language decoder. Local and global image features are extracted and fed into a projection network that uses self-attention to capture long-range fine-grained details. A cross-attention scheme integrates this contextual information into the GPT-2 decoder, enabling GPTFace to generate descriptive, context-rich captions for facial images.</figcaption>
+    </figure>
+
+    <p>
+      GPTFace optimizes a language-modeling loss for next-token prediction, plus a multi-label classification loss (<code>L_attr-text</code>) that penalizes the decoder for missing or misrepresented facial attributes in the generated caption, judged against attributes extracted from the ground truth using TextBlob.
+    </p>
+  </div>
+</section>
+
+<section id="results">
+  <div class="container prose">
+    <h2>Results</h2>
+
+    <h3 style="font-size:1.05rem; font-weight:600; margin-bottom:6px;">1:1 verification on face-caption datasets</h3>
+    <p style="font-size:0.92rem; color:var(--global-text-color-light); margin-bottom:14px;">TPR (%) at FPR = 1e-6 / 1e-5 / 1e-4, both ArcFace and AdaFace as the image encoder, BLIP as the text encoder.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Backbone</th><th>Method</th><th>MMCelebA</th><th>Face2Text</th><th>CelebA-Dialog</th></tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="5">ArcFace</td><td>CGFR</td><td>51.20 / 66.32 / 78.05</td><td>51.50 / 63.50 / 65.92</td><td>34.89 / 64.90 / 74.83</td></tr>
+          <tr><td>TGFR (WACV 2024)</td><td>52.63 / 67.72 / 78.73</td><td>52.26 / 64.28 / 67.06</td><td>36.09 / 66.02 / 76.84</td></tr>
+          <tr><td>Baseline I (image only)</td><td>36.31 / 49.47 / 55.71</td><td>43.33 / 46.10 / 52.14</td><td>21.58 / 59.09 / 66.46</td></tr>
+          <tr><td>Baseline II (BERT + fusion)</td><td>47.32 / 63.89 / 72.83</td><td>50.21 / 62.56 / 64.96</td><td>31.60 / 63.77 / 70.23</td></tr>
+          <tr class="ours"><td><strong>CaptionFace (ours)</strong></td><td class="best">54.45 / 68.52 / 79.78</td><td class="best">53.36 / 65.29 / 67.81</td><td class="best">37.09 / 66.48 / 78.90</td></tr>
+          <tr><td rowspan="5">AdaFace</td><td>CGFR</td><td>60.20 / 65.80 / 81.0</td><td>57.76 / 61.60 / 65.0</td><td>41.90 / 63.36 / 74.88</td></tr>
+          <tr><td>TGFR (WACV 2024)</td><td>61.0 / 68.20 / 81.0</td><td>59.06 / 64.29 / 67.81</td><td>43.16 / 65.50 / 75.20</td></tr>
+          <tr><td>Baseline I (image only)</td><td>36.21 / 56.78 / 70.75</td><td>52.78 / 54.65 / 57.90</td><td>28.26 / 59.39 / 68.67</td></tr>
+          <tr><td>Baseline II (BERT + fusion)</td><td>57.68 / 65.50 / 78.0</td><td>56.27 / 58.60 / 62.0</td><td>38.56 / 61.78 / 72.51</td></tr>
+          <tr class="ours"><td><strong>CaptionFace (ours)</strong></td><td class="best">62.56 / 69.38 / 81.0</td><td class="best">60.85 / 65.29 / 68.89</td><td class="best">44.50 / 67.06 / 76.67</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">CaptionFace is the top-performing method on all three datasets with both image encoders. With AdaFace, it outperforms TGFR by 1.56 / 1.18 / 0 points on MMCelebA, 1.79 / 1.0 / 1.08 on Face2Text, and 1.34 / 1.56 / 1.47 on CelebA-Dialog at TAR@FAR = 1e-6 / 1e-5 / 1e-4.</p>
+
+    <h3 style="font-size:1.05rem; font-weight:600; margin:30px 0 6px;">Benchmark FR accuracy</h3>
+    <p style="font-size:0.92rem; color:var(--global-text-color-light); margin-bottom:14px;">Verification accuracy (%) on LFW / CALFW / AgeDB-30, captions generated on the fly by GPTFace (no ground-truth text at test time).</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Backend</th><th>Method</th><th>LFW</th><th>CALFW</th><th>AgeDB-30</th></tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="6">iResNet50</td><td>ArcFace*</td><td>99.80</td><td>95.40</td><td>98.08</td></tr>
+          <tr><td>MagFace*</td><td>99.82</td><td>95.98</td><td>98.0</td></tr>
+          <tr><td>AdaFace</td><td>99.82</td><td>96.07</td><td>97.85</td></tr>
+          <tr class="ours"><td><strong>Ours (ArcFace)</strong></td><td>99.85</td><td>95.70</td><td class="best">98.19</td></tr>
+          <tr class="ours"><td><strong>Ours (MagFace)</strong></td><td>99.85</td><td>96.07</td><td>98.14</td></tr>
+          <tr class="ours"><td><strong>Ours (AdaFace)</strong></td><td class="best">99.86</td><td class="best">96.13</td><td>98.02</td></tr>
+          <tr><td rowspan="6">iResNet101</td><td>ArcFace</td><td>99.83</td><td>95.45</td><td>98.28</td></tr>
+          <tr><td>MagFace</td><td>99.83</td><td>96.15</td><td>98.17</td></tr>
+          <tr><td>AdaFace</td><td>99.82</td><td>96.08</td><td>98.05</td></tr>
+          <tr class="ours"><td><strong>Ours (ArcFace)</strong></td><td>99.86</td><td>95.61</td><td class="best">98.35</td></tr>
+          <tr class="ours"><td><strong>Ours (MagFace)</strong></td><td>99.86</td><td class="best">96.22</td><td>98.28</td></tr>
+          <tr class="ours"><td><strong>Ours (AdaFace)</strong></td><td class="best">99.87</td><td>96.15</td><td>98.19</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">*Our implementation. Backbones are kept frozen during CaptionFace training (paper Section IV.A.3). LFW and AgeDB-30 are near saturation, but CaptionFace still consistently improves over every corresponding FR model.</p>
+
+    <h3 style="font-size:1.05rem; font-weight:600; margin:30px 0 6px;">GPTFace vs. multimodal foundation models</h3>
+    <p style="font-size:0.92rem; color:var(--global-text-color-light); margin-bottom:14px;">Captioning quality on MMCelebA. GPTFace runs at 112×112 input, roughly a third the resolution of BLIP / BLIP-2.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Method</th><th>Visual backbone</th><th>Input</th><th>B@1</th><th>B@2</th><th>B@3</th><th>B@4</th><th>METEOR</th><th>ROUGE-L</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>BLIP</td><td>ViT-B/16</td><td>384²</td><td>76.84</td><td>66.54</td><td>54.13</td><td>44.56</td><td>60.41</td><td>60.68</td></tr>
+          <tr><td>BLIP-2</td><td>ViT-g FT5</td><td>384²</td><td>84.56</td><td>73.85</td><td>66.0</td><td>57.36</td><td class="best">61.94</td><td class="best">61.12</td></tr>
+          <tr class="ours"><td rowspan="2"><strong>Ours</strong></td><td>ArcFace</td><td>112²</td><td>90.08</td><td>85.64</td><td>78.28</td><td>69.24</td><td>59.60</td><td>60.50</td></tr>
+          <tr class="ours"><td>AdaFace</td><td>112²</td><td class="best">91.10</td><td class="best">86.0</td><td class="best">78.96</td><td class="best">69.90</td><td>59.80</td><td>60.74</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">GPTFace with AdaFace outperforms BLIP and BLIP-2 by 25.34% and 12.54% in B@4, while using a third the input resolution and far fewer trainable parameters (177M vs. 446M / 1.1B).</p>
+
+    <h3 style="font-size:1.05rem; font-weight:600; margin:30px 0 6px;">Fine-grained image classification (CUB-200-2011)</h3>
+    <p style="font-size:0.92rem; color:var(--global-text-color-light); margin-bottom:14px;">Rank-1 accuracy (%), caption supervision only — no bounding boxes or part annotations used.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Method</th><th>BBox</th><th>Parts</th><th>Caption</th><th>Rank-1 Acc.</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ResNet18</td><td>✗</td><td>✗</td><td>✗</td><td>72.77</td></tr>
+          <tr><td>TGFR</td><td>✗</td><td>✗</td><td>✓</td><td>76.0</td></tr>
+          <tr class="ours"><td><strong>Ours (CaptionFace)</strong></td><td>✗</td><td>✗</td><td>✓</td><td class="best">78.0</td></tr>
+          <tr><td>ResNet50</td><td>✗</td><td>✗</td><td>✗</td><td>78.96</td></tr>
+          <tr><td>TGFR</td><td>✗</td><td>✗</td><td>✓</td><td>82.80</td></tr>
+          <tr class="ours"><td><strong>Ours (CaptionFace)</strong></td><td>✗</td><td>✗</td><td>✓</td><td class="best">84.84</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">CaptionFace improves 5.23 points over plain ResNet18 and 5.88 points over plain ResNet50, surpassing TGFR by roughly 2 points on both backbones — confirming the alignment module generalizes beyond faces.</p>
+
+    <h3 style="font-size:1.2rem; font-weight:600; margin:40px 0 14px;">Ablation studies</h3>
+
+    <h4 style="font-size:0.98rem; font-weight:600; margin-bottom:6px;">Objective function</h4>
+    <p style="font-size:0.92rem; color:var(--global-text-color-light); margin-bottom:14px;">TAR@FAR (%) on MMCelebA with AdaFace; identity loss and focal loss are present in every row as the baseline.</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>L<sub>GSAL</sub></th><th>L<sub>LSAL</sub></th><th>L<sub>CKA</sub></th><th>L<sub>attr</sub></th><th>1e-6</th><th>1e-5</th><th>1e-4</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td><td>53.45</td><td>64.26</td><td>75.35</td></tr>
+          <tr><td>✓</td><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td><td>57.60</td><td>66.90</td><td>78.0</td></tr>
+          <tr><td>&ndash;</td><td>✓</td><td>&ndash;</td><td>&ndash;</td><td>58.02</td><td>66.70</td><td>78.89</td></tr>
+          <tr><td>&ndash;</td><td>&ndash;</td><td>✓</td><td>&ndash;</td><td>54.80</td><td>65.5</td><td>76.40</td></tr>
+          <tr><td>&ndash;</td><td>&ndash;</td><td>&ndash;</td><td>✓</td><td>58.91</td><td>65.38</td><td>77.40</td></tr>
+          <tr class="ours"><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td class="best">62.56</td><td class="best">69.38</td><td class="best">81.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">Every loss term contributes positively. Combined, the full objective surpasses the identity + fusion baseline by 9.11 / 5.12 / 5.65 points at TAR@FAR = 1e-6 / 1e-5 / 1e-4.</p>
+
+    <h4 style="font-size:0.98rem; font-weight:600; margin:26px 0 6px;">Robustness to atmospheric turbulence</h4>
+    <p style="font-size:0.92rem; color:var(--global-text-color-light); margin-bottom:14px;">EER and TAR@FAR (%) on MMCelebA as image quality degrades with simulated atmospheric turbulence (D/r₀ ratio).</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Method</th><th>Degrad. level</th><th>EER ↓</th><th>1e-5</th><th>1e-4</th><th>1e-3</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>AdaFace</td><td rowspan="3">0</td><td>5.77</td><td>56.78</td><td>70.75</td><td>82.17</td></tr>
+          <tr><td>TGFR</td><td>3.89</td><td>68.20</td><td>81.0</td><td>87.46</td></tr>
+          <tr class="ours"><td><strong>Ours</strong></td><td class="best">3.50</td><td class="best">69.38</td><td>81.0</td><td class="best">89.20</td></tr>
+          <tr><td>AdaFace</td><td rowspan="3">1</td><td>7.67</td><td>46.84</td><td>58.18</td><td>69.93</td></tr>
+          <tr><td>TGFR</td><td>5.82</td><td>59.12</td><td>70.6</td><td>77.87</td></tr>
+          <tr class="ours"><td><strong>Ours</strong></td><td class="best">5.33</td><td class="best">60.08</td><td class="best">72.0</td><td class="best">79.24</td></tr>
+          <tr><td>AdaFace</td><td rowspan="3">2</td><td>12.68</td><td>32.13</td><td>37.55</td><td>48.31</td></tr>
+          <tr><td>TGFR</td><td>9.75</td><td>48.05</td><td>51.17</td><td>57.62</td></tr>
+          <tr class="ours"><td><strong>Ours</strong></td><td class="best">9.24</td><td>48.05</td><td class="best">54.21</td><td class="best">60.33</td></tr>
+          <tr><td>AdaFace</td><td rowspan="3">3</td><td>20.47</td><td>15.61</td><td>21.28</td><td>32.32</td></tr>
+          <tr><td>TGFR</td><td>13.39</td><td>28.34</td><td>37.06</td><td>49.19</td></tr>
+          <tr class="ours"><td><strong>Ours</strong></td><td class="best">12.96</td><td class="best">30.72</td><td class="best">38.34</td><td class="best">52.32</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">At the most severe degradation level (3), CaptionFace improves 2.38 / 1.28 / 3.13 points over TGFR and 15.11 / 17.06 / 20.0 points over plain AdaFace. The performance gap widens as image quality worsens.</p>
+
+    <figure>
+      <img src="assets/degradation_levels.png" alt="Degradation levels" width="550">
+      <figcaption class="caption"><strong>Figure 7.</strong> Sample face images degraded by atmospheric turbulence, with strengths ranging from 0.5 to 3. Leftmost is the normal image; rightmost is the most heavily degraded version.</figcaption>
+    </figure>
+
+    <h3 style="font-size:1.2rem; font-weight:600; margin:40px 0 14px;">Qualitative analysis</h3>
+
+    <p>
+      Grad-CAM++ class activation maps show that CaptionFace's attention shifts toward the facial regions actually mentioned in the caption, rather than spreading uniformly across the face or background the way the plain AdaFace encoder does.
+    </p>
+
+    <figure>
+      <img src="assets/arcface_attention_map.png" alt="Grad-CAM++ visualizations">
+      <figcaption class="caption"><strong>Figure 8.</strong> Grad-CAM++ visualizations. Each column shows the raw face image, the CAM from pre-trained AdaFace, and the CAM from CaptionFace. CaptionFace's attention is shaped by the input caption — e.g. in (a), it focuses on high cheekbones, earrings, and a big nose as described in the text; in (c), on big lips, lipstick, and the mouth.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="code">
+  <div class="container prose">
+    <h2>Code</h2>
+    <p>
+      The repository includes CaptionFace training and evaluation, the standalone GPTFace captioning model, the fine-grained classification extension on CUB-200-2011, and the legacy BERT-encoder baseline used for comparison in the paper.
+    </p>
+
+    <div class="repo-tree">CaptionFace/
+├── cfg/        <span class="dim"># YAML / Python configs, hyperparameter search space</span>
+├── data/       <span class="dim"># dataset root</span>
+├── fgic/       <span class="dim"># fine-grained classification on CUB-200-2011</span>
+├── models/     <span class="dim"># backbones, fusion nets, margin heads, GPTFace</span>
+├── src/        <span class="dim"># train / test entry points</span>
+├── utils/      <span class="dim"># dataloaders, attribute extraction</span>
+├── visualize/  <span class="dim"># Grad-CAM++ visualizations</span>
+├── weights/    <span class="dim"># pretrained / fine-tuned checkpoints</span>
+└── requirements.txt</div>
+
+    <p style="margin-top:22px;">Train CaptionFace on CelebA with the AdaFace backbone and Cross-Modal Fusion Module:</p>
+    <pre class="code"><code>python3 src/train_captionface.py \
+    --dataset celeba \
+    --model_type adaface \
+    --fusion_type CMF_FR \
+    --batch_size 8 \
+    --max_epoch 18 \
+    --is_itc --is_KD --is_attr_loss</code></pre>
+
+    <p>Evaluate 1:1 verification on the held-out face-caption test split:</p>
+    <pre class="code"><code>python3 src/test_captionface.py --model_type adaface --dataset celeba</code></pre>
+
+    <p>
+      Full installation steps, dataset layout, pretrained-weight paths, and the complete command reference for GPTFace training, benchmark FR evaluation, and the CUB-200-2011 extension are in the
+      <a href="https://github.com/Mahedi-61/CaptionFace#readme">repository README</a>.
+    </p>
+
+    <a class="btn-link" href="https://github.com/Mahedi-61/CaptionFace" style="margin-top:6px; display:inline-block;">View the GitHub repository →</a>
+  </div>
+</section>
+
+
+<section id="citation">
+  <div class="container prose">
+    <h2>Citation</h2>
+    <p>If you use this code or build on this work, please cite:</p>
+
+    <button class="copy-btn" onclick="copyBib('bib1', this)">Copy BibTeX</button>
+    <div class="bibtex" id="bib1">@ARTICLE{Hasan_captionface_2025,
+  author={Hasan, Md Mahedi and Sami, Shoaib Meraj and Nasrabadi, Nasser M. and Dawson, Jeremy},
+  journal={IEEE Transactions on Biometrics, Behavior, and Identity Science},
+  title={Learning Multi-Scale Knowledge-Guided Features for Text-Guided Face Recognition},
+  year={2025},
+  volume={7},
+  number={2},
+  pages={195-209},
+  doi={10.1109/TBIOM.2024.3466216}
+}</div>
+
+    <p style="margin-top:26px;">This paper extends two earlier works on text-guided face recognition:</p>
+    <button class="copy-btn" onclick="copyBib('bib2', this)">Copy BibTeX</button>
+    <div class="bibtex" id="bib2">@InProceedings{Hasan_TGFR_2024,
+    author    = {Hasan, Md Mahedi and Sami, Shoaib Meraj and Nasrabadi, Nasser},
+    title     = {Text-Guided Face Recognition Using Multi-Granularity Cross-Modal Contrastive Learning},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2024},
+    pages     = {5784-5793}
+}
+
+@InProceedings{Hasan_CGFR_2023,
+    author={Hasan, Md Mahedi and Nasrabadi, Nasser},
+    booktitle={2023 IEEE International Joint Conference on Biometrics (IJCB)},
+    title={Improving Face Recognition from Caption Supervision with Multi-Granular Contextual Feature Aggregation},
+    year={2023},
+    pages={1-10}
+}</div>
+  </div>
+</section>
+
+<section id="related">
+  <div class="container prose">
+    <h2>Related work</h2>
+    <ul class="related-list">
+      <li>
+        <span class="venue-tag">WACV 2024</span><br>
+        <a href="https://github.com/Mahedi-61/Text_Guided_Face_Recognition">TGFR &mdash; Text-Guided Face Recognition Using Multi-Granularity Cross-Modal Contrastive Learning</a><br>
+        Our earlier two-stage text-guided FR framework that this work extends to an end-to-end design.
+      </li>
+      <li>
+        <span class="venue-tag">BMVC 2025</span><br>
+        <a href="https://github.com/Mahedi-61/FaceCPT">FaceCPT</a> &mdash; cross-modal face recognition and vision-language pre-training.
+      </li>
+    </ul>
+
+    <p style="margin-top:22px; font-size:0.9rem; color:var(--global-text-color-light);">
+      This work was supported by the Center for Identification Technology Research (CITeR) and the National Science Foundation under Grant 1650474. Image encoders build on
+      <a href="https://github.com/deepinsight/insightface">ArcFace</a>,
+      <a href="https://github.com/mk-minchul/AdaFace">AdaFace</a>, and
+      <a href="https://github.com/IrvingMeng/MagFace">MagFace</a>;
+      the text encoder builds on <a href="https://github.com/salesforce/BLIP">BLIP</a>;
+      the captioning decoder builds on <a href="https://github.com/openai/gpt-2">GPT-2</a>.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>Md Mahedi Hasan, Shoaib Meraj Sami, Nasser Nasrabadi, Jeremy Dawson</div>
+    <div style="margin-top:4px;">Lane Department of Computer Science and Electrical Engineering, West Virginia University</div>
+    <a class="back-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+  function copyBib(id, btn){
+    const text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      const original = btn.textContent;
+      btn.textContent = "Copied ✓";
+      setTimeout(() => { btn.textContent = original; }, 1600);
+    });
+  }
+</script>
+
+</body>
+</html>
